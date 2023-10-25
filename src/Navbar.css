@@ -1,7 +1,7 @@
 body {
   margin: 0;
   background-color: #d9adf7; /* Light purple background */
-  font-family: Arial, sans-serif; /* Set a default font */
+  font-family: 'TT Interphases', Arial, sans-serif; /* Set a default font */
 }
 
 .navbar {
@@ -32,11 +32,13 @@ body {
 .nav-links a {
   color: white;
   text-decoration: none;
+  font-size: 1.5rem;
 }
 
 @media screen and (max-width: 768px) {
   .menu-icon {
     display: block;
+    font-size: 1.8rem;
   }
 
   .nav-links {

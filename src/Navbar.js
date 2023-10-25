@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
+import SocialMediaIcons from './SocialMediaIcons';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,11 +19,11 @@ const Navbar = () => {
       </div>
       <div className={`nav-links ${isOpen ? 'active' : ''}`}>
         <a href="/about">About</a>
+        <a href="/my_work">My Work</a>
+        <a href="/recent_updates">Recent Updates</a>
         <a href="/contact">Contact</a>
-        <a href="/publications">Publications</a>
-        <a href="/tools+models">Tools & Models</a>
-        <a href="/blog+reports">Blog & Reports</a>
       </div>
+      <SocialMediaIcons />
     </nav>
   );
 };

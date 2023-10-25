@@ -1,0 +1,16 @@
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-icons i {
+  font-size: 30px;
+  color: white; /* Icon color */
+}
+
+@media screen and (max-width: 768px) {
+  .social-icons {
+    display: none;
+  }
+}
