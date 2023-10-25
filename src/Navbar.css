@@ -1,10 +1,22 @@
+body {
+  margin: 0;
+  background-color: #d9adf7; /* Light purple background */
+  font-family: Arial, sans-serif; /* Set a default font */
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #333;
+  background-color: #8a2be2; /* Dark purple navbar */
   color: white;
+}
+
+.logo img {
+  width: 10vh; /* Set the width of the logo */
+  height: 10vh; /* Maintain aspect ratio */
+  margin-right: 10px; /* Add spacing between logo and menu icon */
 }
 
 .menu-icon {
@@ -32,13 +44,14 @@
     flex-direction: column;
     position: absolute;
     width: 100%;
-    top: 60px;
+    top: 130px;
     left: 0;
-    background-color: #333;
-    padding: 10px 0;
+    background-color: #8a2be2;
+    padding: 20px 0;
   }
 
   .nav-links.active {
     display: flex;
-  }
+    text-align: center;
+    }
 }

@@ -10,13 +10,18 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
+      <a href="/" className="logo">
+        <img src="/logo.png" alt="Logo" /> {/* Logo Image */}
+      </a>
       <div className="menu-icon" onClick={toggleMenu}>
         <i className={isOpen ? 'fas fa-times' : 'fas fa-bars'}></i>
       </div>
       <div className={`nav-links ${isOpen ? 'active' : ''}`}>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <a href="#">Academic Articles</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <a href="/publications">Publications</a>
+        <a href="/tools+models">Tools & Models</a>
+        <a href="/blog+reports">Blog & Reports</a>
       </div>
     </nav>
   );
