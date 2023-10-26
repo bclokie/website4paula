@@ -1,0 +1,47 @@
+/* Home.css */
+
+.home-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  width: 50vw;
+}
+
+.header {
+  flex: 1;
+  margin-right: 20px;
+  text-align: left;
+}
+
+.header h1 {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.header p {
+  font-size: 32px;
+  color: rebeccapurple;
+}
+
+.home-image {
+  width: 50vw;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .home-container {
+    flex-direction: column; /* Stack items vertically for screens up to 768px width */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .header {
+    margin-bottom: 20px; /* Add some spacing between the header and the image */
+  }
+
+  .home-image {
+    max-width: 30vw; 
+  }
+}
+
