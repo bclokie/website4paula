@@ -9,7 +9,7 @@ const Home = () => {
         <p>Driving Innovation through Behaviourally Informed Design Research</p>
       </div>
       <div className="home-image">
-        <img src="/paula1.jpg" alt="Profile" />      
+        <img src="/home-paula.png" alt="Profile" />      
       </div>
     </div>
   );

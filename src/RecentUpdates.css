@@ -1,0 +1,38 @@
+/* RecentUpdates.css */
+
+.recent-updates-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+  text-align: left;
+}
+
+.recent-updates-info {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.update-container {
+  flex: 2;
+  display: flex;
+  gap: 20px;
+}
+
+.update {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.update h3 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.update p {
+  font-size: 16px;
+  color: #555;
+}

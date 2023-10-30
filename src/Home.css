@@ -1,18 +1,24 @@
 /* Home.css */
 
+body {
+  background: linear-gradient(to bottom right, #8a2be2, #530bc7);
+  overflow: scroll;
+}
+
 .home-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 20px;
   text-align: center;
-  width: 50vw;
+  max-width: 100%;
 }
 
 .header {
   flex: 1;
   margin-right: 20px;
   text-align: left;
+  max-width: 40vw;
 }
 
 .header h1 {
@@ -22,12 +28,11 @@
 
 .header p {
   font-size: 32px;
-  color: rebeccapurple;
+  color: white;
 }
 
 .home-image {
-  width: 50vw;
-  height: auto;
+  max-width: 50vw;
 }
 
 @media screen and (max-width: 768px) {
@@ -36,12 +41,14 @@
     align-items: center; /* Center items horizontally */
   }
 
+
   .header {
     margin-bottom: 20px; /* Add some spacing between the header and the image */
   }
 
   .home-image {
-    max-width: 30vw; 
+    object-fit: contain;
+    max-width: 100%; 
   }
 }
 
