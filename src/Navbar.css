@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  background-color: #d9adf7; /* Light purple background */
-  font-family: 'TT Interphases', Arial, sans-serif; /* Set a default font */
+  background-color: #d9adf7;
+  font-family: 'TT Interphases', Arial, sans-serif;
 }
 
 .navbar {
@@ -9,14 +9,14 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #8a2be2; /* Dark purple navbar */
+  background-color: #8a2be2;
   color: white;
 }
 
 .logo img {
-  width: 10vh; /* Set the width of the logo */
-  height: 10vh; /* Maintain aspect ratio */
-  margin-right: 10px; /* Add spacing between logo and menu icon */
+  width: 10vh;
+  height: 10vh;
+  margin-right: 10px;
 }
 
 .menu-icon {
@@ -26,13 +26,18 @@ body {
 
 .nav-links {
   display: flex;
-  gap: 20px;
+  gap: 30px; /* Increase the gap between navbar links */
 }
 
 .nav-links a {
   color: white;
   text-decoration: none;
   font-size: 1.5rem;
+  position: relative;
+}
+
+.nav-links a:hover {
+  text-decoration: underline; /* Underline the navbar links on hover */
 }
 
 @media screen and (max-width: 768px) {
@@ -40,7 +45,7 @@ body {
     display: block;
     font-size: 1.8rem;
   }
-
+ 
   .nav-links {
     display: none;
     flex-direction: column;
@@ -55,5 +60,5 @@ body {
   .nav-links.active {
     display: flex;
     text-align: center;
-    }
+  }
 }
