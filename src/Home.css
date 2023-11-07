@@ -12,6 +12,8 @@ body {
   text-align: center;
   max-width: 100%;
   max-height: 100%;
+  height: 100vh; /* Set the height to full viewport height */
+  background-attachment: fixed; /* Prevent background from scrolling */
 }
 
 .header {

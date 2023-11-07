@@ -6,6 +6,8 @@
   align-items: center;
   padding: 20px;
   text-align: center;
+  height: 100vh; /* Set the height to full viewport height */
+  background-attachment: fixed; /* Prevent background from scrolling */
 }
 
 .work-title {
