@@ -6,6 +6,7 @@ import About from './About';
 import MyWork from './MyWork';
 import RecentUpdates from './RecentUpdates';
 import Contact from './Contact';
+import './App.css';
 
 const App = () => {
   return (
