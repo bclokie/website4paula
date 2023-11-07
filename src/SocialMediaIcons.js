@@ -10,8 +10,8 @@ const SocialMediaIcons = () => {
       <a href="https://twitter.com/paula_voorheis/" target="_blank" rel="noopener noreferrer">
         <i className="fab fa-twitter"></i>
       </a>
-      <a href="https://www.example.com/google-scholar" target="_blank" rel="noopener noreferrer">
-        <i className="ai ai-google-scholar"></i> {/* Updated line with Academicons icon */}
+      <a href="https://scholar.google.ca/citations?hl=en&user=X5tw-kEAAAAJ&view_op=list_works&gmla=AJ1KiT1Wnnb5ARgiGLnOWFW1hoyDwPLSMEx-70qeAXjjVL0l4KyrzsxuqFp1r-MxtbkASbS-a6tcQ5DBCHJEz4Jw" target="_blank" rel="noopener noreferrer">
+        <i className="ai ai-google-scholar"></i> 
       </a>
     </div>
   );
