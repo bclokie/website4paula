@@ -13,16 +13,17 @@
   font-weight: bold;
   font-size: 24px;
   margin-bottom: 20px;
-  padding: 10px 20px; /* Added padding for the work-title */
-  border: 2px solid pink; /* Border color for the work-title */
-  border-radius: 20px; /* Rounded corners for the work-title */
-  background-color: teal; /* Background color for the work-title */
+  padding: 10px 20px;
+  border: 2px solid pink;
+  border-radius: 20px;
+  background-color: white;
 }
 
 .work-items {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-top: 50px;
 }
 
 .work-item {
@@ -31,10 +32,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px; /* Added padding for the work-item containers */
-  border: 2px solid pink; /* Border color for the work-item containers */
-  border-radius: 20px; /* Rounded corners for the work-item containers */
-  background-color: teal; /* Background color for the work-item containers */
+  padding: 20px;
+  border: 2px solid pink;
+  border-radius: 20px;
+  background-color: white;
 }
 
 .work-item img {
@@ -53,4 +54,11 @@
 .work-item p {
   font-size: 16px;
   color: #555;
+}
+
+/* Media Query for Portrait Mode */
+@media screen and (orientation: portrait) {
+  .work-items {
+    flex-direction: column; /* Stack work-item containers vertically in portrait mode */
+  }
 }
