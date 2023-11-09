@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link component from react-router-dom
+import { Link } from 'react-router-dom'; 
 import './MyWork.css';
 
 const MyWork = () => {
@@ -9,7 +9,6 @@ const MyWork = () => {
         <h2>My Work</h2>
       </div>
       <div className="work-items">
-        {/* Use Link components to create clickable links */}
         <Link to="/tools+models" className="work-item">
           <img src="/work-image1.png" alt="Work 1" />
           <h3>Tools and Models</h3>
