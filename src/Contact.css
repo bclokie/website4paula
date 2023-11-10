@@ -1,8 +1,8 @@
 /* Contact.css */
 body, html {
-  min-height: 100vh; /* Ensure background color stretches to the bottom */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 .contact-container {
@@ -11,27 +11,54 @@ body, html {
   align-items: center;
   padding: 20px;
   text-align: center;
-  height: 90vh; /* Set the height to full viewport height */
-  background-attachment: fixed; /* Prevent background from scrolling */
+  height: 90vh;
+  background-attachment: fixed;
 }
 
 .contact-title {
   font-weight: bold;
-  font-size: 24px;
+  font-size: 48px; /* Increase the font size */
   margin-bottom: 20px;
+}
+
+.contact-section {
+  margin-top: 10px; /* Reduce the top margin */
+  display: flex;
+  flex-direction: column; /* Updated to column layout */
+  align-items: center;
+  border: 3px solid black; /* Adjust the border size */
+  border-radius: 10px; /* Add rounded corners */
+  padding: 10px; /* Add padding */
+}
+
+.icon {
+  margin-bottom: 10px; /* Add spacing between icon and link */
+  font-size: 36px; /* Increase the icon size */
+}
+
+.contact-section p {
+  margin: 0;
+  font-size: 24px; /* Increase the text size */
 }
 
 .contact-info {
   display: flex;
-  gap: 40px;
+  gap: 20px; /* Reduce the gap between items */
+  flex-wrap: wrap; /* Allow items to wrap to the next line if the width is not enough */
 }
 
 .email-section,
-.social-media-section {
+.social-media-section,
+.contact-section {
   flex: 1;
   text-align: left;
 }
 
-.social-media-section h3 {
+.social-media-section h3,
+.contact-section h3 {
   margin-bottom: 10px;
+  font-size: 36px; /* Increase the heading size */
+  border: 3px solid black; /* Adjust the border size */
+  border-radius: 10px; /* Add rounded corners */
+  padding: 10px; /* Add padding */
 }
