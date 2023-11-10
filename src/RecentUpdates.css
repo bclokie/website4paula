@@ -1,4 +1,9 @@
 /* RecentUpdates.css */
+body, html {
+  min-height: 100vh; /* Ensure background color stretches to the bottom */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
 
 .recent-updates-container {
   display: flex;
@@ -6,7 +11,7 @@
   justify-content: center;
   padding: 20px;
   text-align: left;
-  height: 100vh; /* Set the height to full viewport height */
+  height: 90vh; /* Set the height to full viewport height */
   background-attachment: fixed; /* Prevent background from scrolling */
 }
 

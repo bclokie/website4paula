@@ -1,3 +1,9 @@
+body, html {
+  min-height: 100vh; /* Ensure background color stretches to the bottom */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
 .my-work-container {
   display: flex;
   flex-direction: column;
@@ -5,7 +11,7 @@
   justify-content: flex-start;
   padding: 20px;
   text-align: center;
-  height: 100vh;
+  height: 90vh;
   background-attachment: fixed;
   background: linear-gradient(to bottom right, #a48ad4, #6a0572);
 }
