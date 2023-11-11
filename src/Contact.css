@@ -17,48 +17,35 @@ body, html {
 
 .contact-title {
   font-weight: bold;
-  font-size: 48px; /* Increase the font size */
+  font-size: 48px;
   margin-bottom: 20px;
 }
 
 .contact-section {
-  margin-top: 10px; /* Reduce the top margin */
+  margin-top: 10px;
   display: flex;
-  flex-direction: column; /* Updated to column layout */
+  flex-direction: row;
   align-items: center;
-  border: 3px solid black; /* Adjust the border size */
-  border-radius: 10px; /* Add rounded corners */
-  padding: 10px; /* Add padding */
+  justify-content: space-between;
+  border: 5px solid black;
+  border-radius: 10px;
+  padding: 20px; /* Adjusted padding size */
+  background-color: white;
+  flex: 1;
 }
 
 .icon {
-  margin-bottom: 10px; /* Add spacing between icon and link */
-  font-size: 36px; /* Increase the icon size */
+  margin-bottom: 10px;
+  font-size: 36px;
 }
 
 .contact-section p {
-  margin: 0;
-  font-size: 24px; /* Increase the text size */
+  margin: 20px;
+  font-size: 24px;
 }
 
 .contact-info {
   display: flex;
-  gap: 20px; /* Reduce the gap between items */
-  flex-wrap: wrap; /* Allow items to wrap to the next line if the width is not enough */
-}
-
-.email-section,
-.social-media-section,
-.contact-section {
-  flex: 1;
-  text-align: left;
-}
-
-.social-media-section h3,
-.contact-section h3 {
-  margin-bottom: 10px;
-  font-size: 36px; /* Increase the heading size */
-  border: 3px solid black; /* Adjust the border size */
-  border-radius: 10px; /* Add rounded corners */
-  padding: 10px; /* Add padding */
+  gap: 20px;
+  flex-wrap: wrap;
 }
