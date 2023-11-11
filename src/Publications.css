@@ -1,0 +1,42 @@
+/* PublishedWorks.css */
+
+.published-works-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.works-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.works-list {
+  list-style: none;
+  padding: 0;
+}
+
+.work-item {
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.work-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.work-item p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.work-item a {
+  display: block;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
