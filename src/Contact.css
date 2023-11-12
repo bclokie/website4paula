@@ -30,7 +30,7 @@ body, html {
   border: 5px solid black;
   border-radius: 10px;
   padding: 20px; /* Adjusted padding size */
-  background-color: lightblue;
+  background-color: white;
   flex: 1;
 }
 
