@@ -27,12 +27,12 @@ body, html {
   font-weight: bold;
   font-size: 72px;
   text-align: center;
-  color: white;
+  color: black;
 }
 
 .header p {
   font-size: 40px;
-  color: white;
+  color: black;
   text-align: center;
 }
 

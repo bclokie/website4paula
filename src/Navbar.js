@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <a href="/" className="logo">
-        <img src="/logo.png" alt="Logo" /> {/* Logo Image */}
+        Paula Voorheis {/* Text instead of an image */}
       </a>
       <div className="menu-icon" onClick={toggleMenu}>
         <i className={isOpen ? 'fas fa-times' : 'fas fa-bars'}></i>

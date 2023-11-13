@@ -48,21 +48,27 @@ body {
     display: block;
     font-size: 1.8rem;
   }
- 
+
   .nav-links {
-    display: none;
+    display: flex;
     flex-direction: column;
     position: absolute;
     width: 100%;
     top: 10vh;
     left: 0;
-    background-color: #8a2be2;
+    background-color: #E9E8E6;
     padding: 20px 0;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
   }
 
   .nav-links.active {
-    display: flex;
-    text-align: center;
+    max-height: max-content; /* Adjust this value based on your content */
+    opacity: 1;
   }
 }
+
+
 

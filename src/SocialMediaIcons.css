@@ -6,7 +6,7 @@
 
 .social-icons i {
   font-size: 35px;
-  color: white;
+  color: black;
   width: 60px;
   height: 60px;
   display: flex;
@@ -16,8 +16,7 @@
 }
 
 .social-icons i:hover {
-  border: 2px solid white;
-  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(33,33,33,.2);
 }
 
 @media screen and (orientation: portrait) {
