@@ -37,7 +37,7 @@ body {
 .nav-links a {
   color: rgb(105, 104, 104);
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   position: relative;
   transition: color 0.3s ease-in-out; /* Add color transition */
 }
