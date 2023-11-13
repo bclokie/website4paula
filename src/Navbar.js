@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <a href="/" className="logo">
-        Paula Voorheis {/* Text instead of an image */}
+        Paula Voorheis, PhD 
       </a>
       <div className="menu-icon" onClick={toggleMenu}>
         <i className={isOpen ? 'fas fa-times' : 'fas fa-bars'}></i>
