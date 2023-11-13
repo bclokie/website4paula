@@ -15,10 +15,11 @@ body {
   color: black;
 }
 
-.logo img {
-  width: 10vh;
-  height: 10vh;
-  margin-right: 10px;
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
 }
 
 .menu-icon {
@@ -29,12 +30,14 @@ body {
 .nav-links {
   display: flex;
   gap: 30px; /* Increase the gap between navbar links */
+  align-items: center; /* Center the items vertically */
+  margin-top: 3vh; /* Adjust the top margin as needed */
 }
 
 .nav-links a {
-  color: grey;
+  color: rgb(105, 104, 104);
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   position: relative;
   transition: color 0.3s ease-in-out; /* Add color transition */
 }
@@ -56,7 +59,7 @@ body {
 
 .nav-links a:hover::after,
 .nav-links a.active::after {
-  width: 100%; /* Set width to 100% on hover or for the active link */
+  width: 50%; /* Adjust the width based on the text length */
 }
 
 @media screen and (orientation: portrait) {
@@ -70,7 +73,7 @@ body {
     flex-direction: column;
     position: absolute;
     width: 100%;
-    top: 10vh;
+    top: 6vh;
     left: 0;
     background-color: #E9E8E6;
     padding: 20px 0;
