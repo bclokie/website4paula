@@ -13,7 +13,7 @@ body, html {
   text-align: center;
   height: 90vh;
   background-attachment: fixed;
-  background: linear-gradient(to bottom right, #a48ad4, #6a0572);
+  /* background: linear-gradient(to bottom right, #a48ad4, #6a0572); */
 }
 
 .work-title {

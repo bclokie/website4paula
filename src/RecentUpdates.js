@@ -11,15 +11,15 @@ const RecentUpdates = () => {
       <div className="update-container">
         <div className="update">
           <h3>Update 1</h3>
-          <p>Description of Update 1.</p>
+          <p>Here is the content for the first update. Waiting for Paula to update the update</p>
         </div>
         <div className="update">
           <h3>Update 2</h3>
-          <p>Description of Update 2.</p>
+          <p>Here is the content for the second update. Waiting for Paula to update the update</p>
         </div>
         <div className="update">
           <h3>Update 3</h3>
-          <p>Description of Update 3.</p>
+          <p>Here is the content for the third update. Waiting for Paula to update the update</p>
         </div>
       </div>
     </div>
