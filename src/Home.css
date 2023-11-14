@@ -1,7 +1,8 @@
+/* Home.css */
 body, html {
-  min-height: 100vh; /* Ensure background color stretches to the bottom */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 .home-container {
@@ -9,9 +10,9 @@ body, html {
   flex-direction: row;
   align-items: center;
   text-align: center;
-  max-height: 100vh; /* Set the minimum height to full viewport height */
+  max-height: 100vh;
   height: 90vh;
-  background-attachment: fixed; /* Prevent background from scrolling */
+  background-attachment: fixed;
   overflow: -moz-hidden-unscrollable;
 }
 
@@ -35,6 +36,21 @@ body, html {
   text-align: center;
 }
 
+.about-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+  background-color: pink;
+  border-radius: 25px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.about-button:hover {
+  background-color: #ff66b2; /* Darker pink on hover */
+}
+
 .home-image {
   max-width: 50vw;
   margin-bottom: 5vh;
@@ -42,16 +58,16 @@ body, html {
 
 @media screen and (max-width: 768px) {
   .home-container {
-    flex-direction: column; /* Stack items vertically for screens up to 768px width */
-    align-items: center; /* Center items horizontally */
+    flex-direction: column;
+    align-items: center;
   }
 
   .header {
-    margin-bottom: 20px; /* Add some spacing between the header and the image */
+    margin-bottom: 20px;
   }
 
   .home-image {
     object-fit: contain;
-    max-width: 100%; 
+    max-width: 100%;
   }
 }
