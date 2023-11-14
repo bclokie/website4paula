@@ -7,9 +7,9 @@ body, html {
 
 .recent-updates-container {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start; /* Align children to the start (top) vertically */
-  align-items: center;
+  flex-direction: row; /* Change to row to have elements side by side */
+  justify-content: space-between; /* Spread elements across the container */
+  align-items: flex-start;
   padding: 20px;
   text-align: left;
   height: 90vh;
@@ -35,7 +35,7 @@ body, html {
 }
 
 .recent-updates-info {
-  width: 100%; /* Take full width */
+  width: 48%; /* Adjusted width to leave space for updates */
   margin-bottom: 20px; /* Add margin at the bottom to separate from the updates */
 }
 
@@ -45,9 +45,10 @@ body, html {
 }
 
 .update-container {
+  width: 48%; /* Adjusted width to leave space for the image */
   display: flex;
+  flex-direction: column; /* Arrange updates in a column */
   gap: 20px;
-  justify-content: flex-start; /* Align updates to the start (left) horizontally */
 }
 
 .recent-updates-info img {
@@ -57,7 +58,7 @@ body, html {
 }
 
 .update {
-  max-width: 300px; /* Limit the max width of updates as needed */
+  max-width: 100%; /* Adjusted max width of updates */
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
