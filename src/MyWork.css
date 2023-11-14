@@ -13,6 +13,19 @@ body, html {
   text-align: center;
   height: 90vh;
   background-attachment: fixed;
+  animation: riseUp 1s ease-out; /* Apply the translateY animation */
+}
+
+/* Add keyframes for the translateY animation */
+@keyframes riseUp {
+  from {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .work-title-container {

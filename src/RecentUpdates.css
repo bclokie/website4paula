@@ -5,6 +5,10 @@ body, html {
   padding: 0;
 }
 
+.page-container {
+  animation: riseUp 1s ease-out; /* Apply the translateY animation */
+}
+
 .recent-updates-container {
   display: flex;
   flex-direction: row; /* Change to row to have elements side by side */
@@ -15,6 +19,17 @@ body, html {
   height: 90vh;
   background-attachment: fixed;
   margin-top: 50px;
+}
+
+@keyframes riseUp {
+  from {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .contact-header {

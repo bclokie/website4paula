@@ -75,3 +75,24 @@ body, html {
     max-width: 100%;
   }
 }
+
+/* Home.css (or your main styling file) */
+@keyframes riseUp {
+  from {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to the elements you want to animate */
+.home-container,
+.header,
+.about-button,
+.home-image {
+  animation: riseUp 1s ease-out; /* Adjust the duration and easing as needed */
+}
+

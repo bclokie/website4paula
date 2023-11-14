@@ -7,6 +7,18 @@ body, html {
 
 .contact-page {
   text-align: center;
+  animation: riseUp 1s ease-out; /* Apply the translateY animation */
+}
+
+@keyframes riseUp {
+  from {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .contact-header {
