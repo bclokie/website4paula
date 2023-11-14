@@ -14,11 +14,12 @@ body, html {
   text-align: left;
   height: 90vh;
   background-attachment: fixed;
+  margin-top: 50px;
 }
 
 .contact-header {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .contact-header h1 {
