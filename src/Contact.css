@@ -5,6 +5,27 @@ body, html {
   padding: 0;
 }
 
+.contact-page {
+  text-align: center;
+}
+
+.contact-header {
+  margin-bottom: 20px;
+}
+
+.contact-header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.header-line {
+  width: 5%;
+  height: 4px;
+  background-color: purple;
+  margin: 0 auto;
+  border-radius: 1px;
+}
+
 .contact-container {
   display: flex;
   justify-content: space-between;
@@ -19,6 +40,7 @@ body, html {
   flex-direction: column;
   align-items: flex-start;
   margin-left: 20px;
+  margin-top: 50px;
 }
 
 .contact-section {
@@ -57,7 +79,8 @@ body, html {
 
 .contact-form h2 {
   font-size: 24px;
-  margin-bottom: 10px;
+  margin: 30px auto;
+  text-align: center;
 }
 
 .contact-form form {
@@ -78,6 +101,7 @@ body, html {
 
 .contact-form input[type="text"],
 .contact-form input[type="email"] {
+  margin-bottom: 25px;
   flex: 1;
   padding: 8px;
   font-size: 14px; /* Adjust the font size for name and email fields */
@@ -94,14 +118,17 @@ body, html {
 }
 
 .contact-form button {
-  padding: 10px;
-  font-size: 18px;
-  background-color: #E9E8E6;
+  width: 200px;  /* Adjusted width for a smaller button */
+  padding: 8px 15px; /* Adjusted padding for a smaller button */
+  font-size: 16px;  /* Adjusted font size */
+  background-color: lightpink;  /* Changed background color to pink */
   border: none;
+  border-radius: 10px;  /* Added border-radius for rounded corners */
   cursor: pointer;
   color: black;
+  margin: 10px auto;
 }
 
 .contact-form button:hover {
-  background-color: lightpink;
+  background-color: pink;
 }
