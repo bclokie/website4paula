@@ -62,6 +62,15 @@ body {
   width: 50%; /* Adjust the width based on the text length */
 }
 
+.nav-links a.active-link {
+  color: black;
+}
+
+.nav-links a.active-link::after {
+  width: 100%; /* Adjust the width based on the text length */
+}
+
+
 @media screen and (orientation: portrait) {
   .menu-icon {
     display: block;
