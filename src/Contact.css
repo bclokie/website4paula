@@ -64,6 +64,10 @@ body, html {
   margin-right: 10px;
 }
 
+.icon-wrapper:hover {
+  background-color: #ff66b2;
+}
+
 .icon {
   font-size: 24px;
   color: black;
@@ -75,7 +79,7 @@ body, html {
 }
 
 .contact-form {
-  width: 60%;
+  width: 64%;
   margin-right: 50px;
 }
 
@@ -123,7 +127,7 @@ body, html {
   width: 200px;  /* Adjusted width for a smaller button */
   padding: 8px 15px; /* Adjusted padding for a smaller button */
   font-size: 16px;  /* Adjusted font size */
-  background-color: lightpink;  /* Changed background color to pink */
+  background-color: pink;  /* Changed background color to pink */
   border: none;
   border-radius: 10px;  /* Added border-radius for rounded corners */
   cursor: pointer;
@@ -132,7 +136,7 @@ body, html {
 }
 
 .contact-form button:hover {
-  background-color: pink;
+  background-color: #ff66b2;
 }
 
 .leaflet-map {
