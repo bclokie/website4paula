@@ -31,6 +31,7 @@ body {
   display: flex;
   gap: 30px; /* Increase the gap between navbar links */
   align-items: center; /* Center the items vertically */
+  margin-right: 120px;
 }
 
 .nav-links a {

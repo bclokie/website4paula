@@ -1,35 +1,63 @@
 /* RecentUpdates.css */
 body, html {
-  min-height: 100vh; /* Ensure background color stretches to the bottom */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 .recent-updates-container {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start; /* Align children to the start (top) vertically */
+  align-items: center;
   padding: 20px;
   text-align: left;
-  height: 90vh; /* Set the height to full viewport height */
-  background-attachment: fixed; /* Prevent background from scrolling */
+  height: 90vh;
+  background-attachment: fixed;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.header-line {
+  width: 5%;
+  height: 4px;
+  background-color: purple;
+  margin: 0 auto;
+  border-radius: 1px;
 }
 
 .recent-updates-info {
-  flex: 1;
-  margin-right: 20px;
+  width: 100%; /* Take full width */
+  margin-bottom: 20px; /* Add margin at the bottom to separate from the updates */
+}
+
+.recent-updates-info h2 {
   font-size: 40px;
   text-align: center;
 }
 
 .update-container {
-  flex: 2;
   display: flex;
   gap: 20px;
+  justify-content: flex-start; /* Align updates to the start (left) horizontally */
+}
+
+.recent-updates-info img {
+  width: 100%; /* Make the image take full width */
+  max-width: 300px; /* Limit the max width of the image as needed */
+  margin-right: 20px; /* Add margin to the right to separate from the updates */
 }
 
 .update {
-  flex: 1;
+  max-width: 300px; /* Limit the max width of updates as needed */
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;

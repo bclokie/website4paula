@@ -4,10 +4,17 @@ import './RecentUpdates.css'; // Import the RecentUpdates.css file for styling
 const RecentUpdates = () => {
   return (
     <div className="recent-updates-container">
+      {/* Header Details */}
+      <div className="contact-header">
+        <h1>Recent Updates</h1>
+        <div className="header-line"></div>
+      </div>
+
+      {/* Recent Updates Content */}
       <div className="recent-updates-info">
-        <h2>Recent Updates</h2>
         <img src="/recent-updates.png" alt="Recent Updates" />
       </div>
+
       <div className="update-container">
         <div className="update">
           <h3>Update 1</h3>
