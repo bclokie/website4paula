@@ -1,5 +1,5 @@
-import React from 'react';
-import './RecentUpdates.css'; // Import the RecentUpdates.css file for styling
+import React from 'react'; 
+import './RecentUpdates.css'; 
 
 const RecentUpdates = () => {
   return (
@@ -27,7 +27,7 @@ const RecentUpdates = () => {
           </div>
           <div className="update">
             <h3>Update 3</h3>
-            <p>Here is the content for the third update. Waiting for Paula to update the update</p>
+            <p>There can be as many updates as needed. I've just made 3 containers for now. I can also make a page for each update. Up to you!</p>
           </div>
         </div>
       </div>
