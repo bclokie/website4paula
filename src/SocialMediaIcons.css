@@ -1,7 +1,7 @@
 .social-icons {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 1px;
 }
 
 .social-icons i {
