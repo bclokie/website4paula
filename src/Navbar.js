@@ -20,7 +20,7 @@ const Navbar = () => {
       <div className={`nav-links ${isOpen ? 'active' : ''}`}>
         <a href="/about">About</a>
         <a href="/my-work">My Work</a>
-        <a href="/recent-updates">Recent Updates</a>
+        <a href="/recent-updates">Updates</a>
         <a href="/contact">Contact</a>
       </div>
       <SocialMediaIcons />
