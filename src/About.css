@@ -2,12 +2,43 @@
 
 .about-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 20px;
   text-align: left;
-  height: 100vh; /* Set the height to full viewport height */
-  background-attachment: fixed; /* Prevent background from scrolling */
+  height: 90vh;
+  background-attachment: fixed;
+}
+
+.about-header {
+  position: relative;
+}
+
+.about-header h2 {
+  font-size: 36px; /* Match the font size of the MyWork header */
+  margin-bottom: 10px; /* Match the margin-bottom of the MyWork header */
+  padding: 10px 20px;
+  background-color: white;
+}
+
+.about-header .header-line::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background-color: purple;
+  border-radius: 1px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; /* Adjusted margin to separate the content from the header */
 }
 
 .about-image {
@@ -17,12 +48,6 @@
 
 .about-text {
   flex: 2;
-}
-
-.about-text h2 {
-  font-weight: bold;
-  font-size: 24px;
-  margin-bottom: 10px;
 }
 
 .about-text p {
