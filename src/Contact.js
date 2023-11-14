@@ -38,7 +38,7 @@ const Contact = () => {
 
       // Add a marker for the specified location
       L.marker([43.660070, -79.395769]).addTo(map)
-        .bindPopup('600 University Avenue, Toronto')
+        .bindPopup('Sinai Health, Toronto')
         .openPopup();
     }
   }, []);

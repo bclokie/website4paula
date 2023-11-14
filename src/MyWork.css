@@ -1,7 +1,7 @@
 body, html {
-  min-height: 100vh; /* Ensure background color stretches to the bottom */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 .my-work-container {
@@ -13,17 +13,29 @@ body, html {
   text-align: center;
   height: 90vh;
   background-attachment: fixed;
-  /* background: linear-gradient(to bottom right, #a48ad4, #6a0572); */
+}
+
+.work-title-container {
+  position: relative;
 }
 
 .work-title {
-  font-weight: bold;
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 36px;
+  margin-top: 20px;
   padding: 10px 20px;
-  border: 2px solid pink;
-  border-radius: 20px;
   background-color: white;
+}
+
+.work-title-container .header-line::after {
+  content: ""; /* Add an empty content property */
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%; /* Set the desired width */
+  height: 4px;
+  background-color: purple;
+  border-radius: 1px;
 }
 
 .work-items {
@@ -66,6 +78,8 @@ body, html {
 /* Media Query for Portrait Mode */
 @media screen and (orientation: portrait) {
   .work-items {
-    flex-direction: column; /* Stack work-item containers vertically in portrait mode */
+    margin: 20px auto; /* Added margin around the entire work items container */
+    position: relative; /* Add position relative to the work items container */
+    flex-direction: column;
   }
 }

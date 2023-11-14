@@ -5,8 +5,9 @@ import './MyWork.css';
 const MyWork = () => {
   return (
     <div className="my-work-container">
-      <div className="work-title">
-        <h2>My Work</h2>
+      <div className="work-title-container">
+        <h2 className="work-title">My Work</h2>
+        <div className="header-line"></div>
       </div>
       <div className="work-items">
         <Link to="/tools+models" className="work-item">
