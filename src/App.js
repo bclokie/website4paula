@@ -1,11 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Navbar';
-import Home from './Home';
-import About from './About';
-import MyWork from './MyWork';
-import RecentUpdates from './RecentUpdates';
-import Contact from './Contact';
+import Home from './pages/Home';
+import About from './pages/About';
+import MyWork from './pages/MyWork';
+import RecentUpdates from './pages/RecentUpdates';
+import Contact from './pages/Contact';
+// import ToolsandModels from './pages/ToolsandModels';
+// import Publications from './pages/Publications';
+// import TalksandWorkshops from './pages/TalksandWorkshops';
 import './App.css';
 
 const App = () => {

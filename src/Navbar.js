@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom'; // If you're using React Router
 import './Navbar.css';
-import SocialMediaIcons from './SocialMediaIcons';
+import SocialMediaIcons from './pages/SocialMediaIcons';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
