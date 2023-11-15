@@ -16,17 +16,6 @@ body, html {
   margin-top: 50px;
 }
 
-@keyframes riseUp {
-  from {
-    transform: translateY(20%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 .contact-header {
   text-align: center;
   margin-bottom: 50px;
