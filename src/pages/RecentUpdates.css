@@ -5,10 +5,6 @@ body, html {
   padding: 0;
 }
 
-.page-container {
-  animation: riseUp 1s ease-out; /* Apply the translateY animation */
-}
-
 .recent-updates-container {
   display: flex;
   flex-direction: row; /* Change to row to have elements side by side */
