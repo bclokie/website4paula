@@ -120,7 +120,7 @@ body, html {
 }
 
 .recent-updates-container {
-  animation-delay: 0.2s; /* Apply a delay to the container */
+  animation-delay: 0.05s; /* Apply a delay to the container */
 }
 
 .contact-header {
