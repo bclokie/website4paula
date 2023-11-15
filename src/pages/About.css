@@ -51,6 +51,7 @@
   align-items: flex-start; /* Adjusted to align content to the start */
   justify-content: center;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .about-image {
@@ -71,8 +72,9 @@
 }
 
 .my-work-button {
-  margin-top: 20px; /* Added margin to separate the button from the text */
-  display: inline-block;
+  margin-top: 40px; /* Added margin to separate the button from the text */
+  display: block;
+  width: fit-content;
   padding: 15px 30px;
   font-size: 24px;
   text-decoration: none;
@@ -80,7 +82,11 @@
   background-color: pink;
   border-radius: 25px;
   transition: background-color 0.3s ease-in-out;
+  position: absolute;
+  left: 60%;
+  transform: translateX(-50%);
 }
+
 
 .my-work-button:hover {
   background-color: #ff66b2; /* Darker pink on hover */
