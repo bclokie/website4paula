@@ -8,16 +8,33 @@
   padding: 20px;
   text-align: left;
   background-attachment: fixed;
+}
+
+.about-header,
+.about-content,
+.my-work-button {
   animation: riseUp 1s ease-out; /* Apply the translateY animation */
 }
 
 /* Add keyframes for the translateY animation */
 @keyframes riseUp {
-  from {
+  0% {
     transform: translateY(20%);
     opacity: 0;
   }
-  to {
+  25% {
+    transform: translateY(15%);
+    opacity: 0.25;
+  }
+  50% {
+    transform: translateY(10%);
+    opacity: 0.5;
+  }
+  75% {
+    transform: translateY(5%);
+    opacity: 0.75;
+  }
+  100% {
     transform: translateY(0);
     opacity: 1;
   }
@@ -83,10 +100,7 @@
   border-radius: 25px;
   transition: background-color 0.3s ease-in-out;
   position: absolute;
-  left: 60%;
-  transform: translateX(-50%);
 }
-
 
 .my-work-button:hover {
   background-color: #ff66b2; /* Darker pink on hover */
