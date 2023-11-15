@@ -32,7 +32,7 @@ const RecentUpdates = () => {
           </div>
         </div>
       </div>
-      <Link to="contact" className="contact-button" >
+      <Link to="/contact" className="contact-button" >
         Contact Me
         </Link>
     </div>
