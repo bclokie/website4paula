@@ -1,6 +1,7 @@
 // About.js
 import React from 'react';
 import './About.css';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
@@ -20,6 +21,9 @@ const About = () => {
             I use mixed methods research approaches and work closely with stakeholders (e.g., patients,
             caregivers, and providers) to ensure innovative solutions meet users’ needs.
           </p>
+          <Link to="/my-work" className="my-work-button">
+          See My Work
+        </Link>
         </div>
       </div>
     </div>

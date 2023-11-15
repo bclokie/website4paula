@@ -1,5 +1,6 @@
 import React from 'react'; 
 import './RecentUpdates.css'; 
+import { Link } from 'react-router-dom';
 
 const RecentUpdates = () => {
   return (
@@ -31,6 +32,9 @@ const RecentUpdates = () => {
           </div>
         </div>
       </div>
+      <Link to="contact" className="contact-button" >
+        Contact Me
+        </Link>
     </div>
   );
 };

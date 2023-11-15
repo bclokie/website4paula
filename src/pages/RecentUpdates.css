@@ -16,7 +16,6 @@ body, html {
   align-items: flex-start;
   padding: 20px;
   text-align: left;
-  height: 90vh;
   background-attachment: fixed;
   margin-top: 50px;
 }
@@ -93,4 +92,23 @@ body, html {
 .update p {
   font-size: 16px;
   color: #555;
+}
+
+.contact-button {
+  margin-top: auto; /* Remove the margin-top property */
+  display: block; /* Change to block to take full width */
+  width: fit-content; /* Adjust width based on content */
+  margin: 0 auto; /* Center the button horizontally */
+  padding: 15px 30px;
+  font-size: 24px;
+  text-decoration: none;
+  color: black;
+  background-color: pink;
+  border-radius: 25px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+.contact-button:hover {
+  background-color: #ff66b2; /* Darker pink on hover */
 }
