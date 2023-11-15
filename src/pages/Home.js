@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className="header">
-        <h1>Paula Voorheis PhD</h1>
+        <h1>Paula Voorheis, PhD</h1>
         <p>Driving Innovation through Behaviourally Informed Design Research</p>
         <Link to="/about" className="about-button">
           About Me
