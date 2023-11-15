@@ -53,13 +53,17 @@ body, html {
   background-color: white;
 }
 
+.header-line {
+  width: 100px;
+}
+
 .work-title-container .header-line::after {
   content: ""; /* Add an empty content property */
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 40%; /* Set the desired width */
+  width: calc(5vw); /* Set the desired width using calc and vw units */
   height: 4px;
   background-color: purple;
   border-radius: 1px;
