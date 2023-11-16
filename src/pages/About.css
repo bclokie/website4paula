@@ -105,3 +105,32 @@
 .my-work-button:hover {
   background-color: #ff66b2; /* Darker pink on hover */
 }
+
+@media screen and (orientation: portrait) {
+  .about-content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  
+  .about-image {
+    order: 0;
+    margin-bottom: 1rem;
+    animation: riseUp 1s ease-out;
+    margin: 0 auto;
+    max-width: 30%;
+  }
+
+  .about-text {
+    order: 1;
+    margin-top: 20px; /* Adjusted margin */
+    margin-bottom: 1.25rem;
+  }
+
+  .my-work-button {
+    order: 2;
+    margin-top: 10%; /* Adjusted margin */
+    position: static; /* Remove absolute positioning */
+    margin: 0 auto;
+  }
+}
