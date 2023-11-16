@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <NavLink to="/" className="logo" onClick={() => setActiveLink('/')}>
-        Paula Voorheis, PhD
+        Paula Voorheis
       </NavLink>
       <div className="menu-icon" onClick={toggleMenu}>
         <i className={isOpen ? 'fas fa-times' : 'fas fa-bars'}></i>
