@@ -101,6 +101,28 @@ body {
   .logo {
     font-size: 1.5rem;
   }
+
+  .nav-links a {
+    position: relative;
+    padding-bottom: 10px; /* Add padding to create space for the dividing line */
+  }
+
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0; /* Adjust the distance from the text to place the line below the text */
+    width: 100%; /* Stretch the line across the full width */
+    height: 3px; /* Set the height of the dividing line */
+    background-color: gray; /* Set the color of the dividing line */
+  }
+
+  .nav-links a:hover::after,
+  .nav-links a.active::after,
+  .nav-links a.active-link::after {
+    background-color: purple; /* Hide the dividing line on hover, active, and active-link states */
+    width: 100%;
+  }
 }
 
 

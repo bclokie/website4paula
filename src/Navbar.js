@@ -5,7 +5,7 @@ import SocialMediaIcons from './pages/SocialMediaIcons';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState('/');
+  const [setActiveLink] = useState('/');
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
