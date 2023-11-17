@@ -1,5 +1,6 @@
 /* RecentUpdates.css */
-body, html {
+body,
+html {
   min-height: 100vh;
   margin: 0;
   padding: 0;
@@ -35,9 +36,8 @@ body, html {
 }
 
 .recent-updates-info {
-  width: 48%; /* Adjusted width to leave space for updates */
+  width: 100%; /* Adjusted width to take full width in mobile view */
   margin-bottom: 20px; /* Add margin at the bottom to separate from the updates */
-  margin-right: 10px; /* Adjusted margin to bring the image closer to the center */
 }
 
 .recent-updates-info h2 {
@@ -46,13 +46,8 @@ body, html {
 }
 
 .update-container {
-  width: 48%; /* Adjusted width to leave space for the image */
-  display: flex;
-  flex-direction: column; /* Arrange updates in a column */
-  gap: 20px;
-  margin-left: 10px; /* Adjusted margin to bring the image closer to the center */
-  margin-right: 10px; /* Added margin to the right */
-  justify-content: center; /* Center updates vertically */
+  width: 90%; /* Adjusted width to take 90% of the viewport width in mobile view */
+  margin: 0 auto; /* Center the container horizontally */
 }
 
 .recent-updates-info img {
@@ -93,7 +88,6 @@ body, html {
   transition: background-color 0.3s ease-in-out;
 }
 
-
 .contact-button:hover {
   background-color: #ff66b2; /* Darker pink on hover */
 }
@@ -124,15 +118,15 @@ body, html {
 }
 
 .contact-header {
-  animation-delay: .4s; /* Apply a delay to the header */
+  animation-delay: 0.4s; /* Apply a delay to the header */
 }
 
 .header-line {
-  animation-delay: .6s; /* Apply a delay to the header line */
+  animation-delay: 0.6s; /* Apply a delay to the header line */
 }
 
 .recent-updates-info {
-  animation-delay: .8s; /* Apply a delay to the info section */
+  animation-delay: 0.8s; /* Apply a delay to the info section */
 }
 
 .update-container {
@@ -145,4 +139,21 @@ body, html {
 
 .contact-button:hover {
   background-color: #ff66b2;
+}
+
+/* Media Query for Mobile View */
+@media screen and (orientation: portrait) {
+  .recent-updates-container {
+    flex-direction: column; /* Change to column to stack elements in mobile view */
+    align-items: center;
+  }
+
+  .recent-updates-info,
+  .update-container {
+    width: 100%; /* Take full width in mobile view */
+  }
+
+  .recent-updates-info img {
+    max-width: 40%; /* Take full width in mobile view */
+  }
 }
