@@ -134,4 +134,12 @@ body, html {
     position: relative; /* Add position relative to the work items container */
     flex-direction: column;
   }
+
+  .work-item {
+    margin-bottom: 20px;
+  }
+
+  .header-line {
+    width: 100vw;
+  }
 }

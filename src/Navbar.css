@@ -107,6 +107,11 @@ body {
     padding-bottom: 10px; /* Add padding to create space for the dividing line */
   }
 
+  .nav-links a.active-link {
+    color: purple !important; /* This isn't working... 😭😭😭😭😭😭😭😭😭😭😭😭 */
+    background-color: pink !important; /* Also not working 🤬😡👿😤😠*/
+  }
+
   .nav-links a::after {
     content: '';
     position: absolute;
