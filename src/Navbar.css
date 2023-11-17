@@ -127,6 +127,7 @@ body {
   .nav-links a.active-link::after {
     background-color: purple; 
     width: 100%;
+    height: 4px;
   }
 }
 
