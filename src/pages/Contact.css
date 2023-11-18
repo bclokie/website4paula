@@ -157,3 +157,67 @@ body, html {
   border: 2px solid purple;
   margin: 20px auto;
 }
+
+@media screen and (orientation: portrait) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: auto;
+  }
+
+  .contact-links {
+    align-items: left;
+    margin-top: 20px;
+    margin: 0 auto;
+  }
+
+  .contact-form {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .contact-form h2 {
+    font-size: 24px;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-form .name-email-container {
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form input[type="subject"] {
+    margin-bottom: 15px;
+    font-size: 16px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+  }
+
+  .contact-form textarea {
+    margin-bottom: 10px;
+    font-size: 16px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+  }
+
+  .contact-form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: pink;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    margin: 10px auto;
+  }
+}
