@@ -26,8 +26,8 @@ const MyWork = () => {
           <p>Here are some other resources to look through</p>
         </Link>
       </div>
-      <Link to="/recent-updates" className="updates-button">
-        See My Recent Updates
+      <Link to="/contact" className="updates-button">
+        Contact Me!
       </Link>
     </div>
   );
