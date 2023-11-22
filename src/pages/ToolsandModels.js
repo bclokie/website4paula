@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './ToolsandMethods.css';
+import './ToolsandModels.css';
 
 const ToolsandMethods = () => {
   return (
