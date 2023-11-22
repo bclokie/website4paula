@@ -55,6 +55,7 @@
 .work-title-container .subtitle {
   font-size: 18px;
   color: #555;
-  margin-top: 10px;
+  margin-top: 30px;
   animation: riseUp 1s ease-out;
+  margin-bottom: 40px;
 }
