@@ -10,14 +10,14 @@ const Publications = () => {
       authors: 'Voorheis P, Zhao A, Kuluski K, Pham Q, Scott T, Sztur P, Khanna N, Ibrahim M, Petch J',
       journal: 'JMIR Mhealth Uhealth',
       year: 2022,
-      doi: '10.2196/35799',
+      doi: 'https://doi.org/10.2196/35799',
     },
     {
       title: 'Making Sense of Theories, Models, and Frameworks in Digital Health Behavior Change Design: Qualitative Descriptive Study',
       authors: 'Voorheis P, Bhuiya AR, Kuluski K, Pham Q, Petch J',
       journal: 'Journal of Medical Internet Research',
       year: 2023,
-      doi: '10.2196/45095',
+      doi: 'https://doi.org/10.2196/45095',
     },
     {
       title: 'Maximizing the value of patient and public involvement in the digital health co-design process: A qualitative study with design leaders and patient-public partners',
