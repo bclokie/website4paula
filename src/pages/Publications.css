@@ -40,3 +40,21 @@
   text-decoration: none;
   font-weight: bold;
 }
+
+@keyframes riseUp {
+  from {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.work-title-container .subtitle {
+  font-size: 18px;
+  color: #555;
+  margin-top: 10px;
+  animation: riseUp 1s ease-out;
+}

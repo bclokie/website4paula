@@ -38,8 +38,12 @@ const Publications = () => {
   ];
 
   return (
-    <div className="published-works-container">
-      <h2 className="works-title">Published Works</h2>
+    <div className="my-work-container">
+      <div className="work-title-container">
+        <h2 className="work-title">Published Works</h2>
+        <div className="header-line"></div>
+        <p className="subtitle">Explore my key publications and research</p>
+      </div>
       <ul className="works-list">
         {publications.map((publication, index) => (
           <li key={index} className="work-item">
