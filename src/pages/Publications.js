@@ -54,7 +54,7 @@ const Publications = () => {
           <li key={index} className="work-item">
             <h3>{publication.title}</h3>
             <p>Authors: {publication.authors}</p>
-            <p>Journal: {publication.journal}, {publication.year}</p>
+            <p>{publication.journal}, {publication.year}</p>
             <a href={publication.doi} target="_blank" rel="noopener noreferrer">
               View Work
             </a>
