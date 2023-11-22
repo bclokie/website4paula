@@ -4,7 +4,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './ToolsandModels.css';
 
-const ToolsandMethods = () => {
+const ToolsandModels = () => {
   return (
     <div className="tools-methods-container">
       <div className="work-title-container">
@@ -35,4 +35,4 @@ const ToolsandMethods = () => {
   );
 };
 
-export default ToolsandMethods;
+export default ToolsandModels;
