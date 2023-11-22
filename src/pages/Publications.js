@@ -47,14 +47,19 @@ const Publications = () => {
       <div className="work-title-container">
         <h2 className="work-title">Published Works</h2>
         <div className="header-line"></div>
-        <p className="subtitle">Explore my key publications and research</p>
+        <p className="subtitle">
+          My key publications are listed below. For a full list of my publications, please refer to{' '}
+          <a href="https://scholar.google.ca/citations?hl=en&user=X5tw-kEAAAAJ&view_op=list_works&gmla=AJ1KiT1Wnnb5ARgiGLnOWFW1hoyDwPLSMEx-70qeAXjjVL0l4KyrzsxuqFp1r-MxtbkASbS-a6tcQ5DBCHJEz4Jw" target="_blank" rel="noopener noreferrer">
+            Google Scholar
+          </a>.
+        </p>
       </div>
       <ul className="works-list">
         {publications.map((publication, index) => (
           <li key={index} className="work-item">
             <h3>{publication.title}</h3>
             <p>Authors: {publication.authors}</p>
-            <p>{publication.journal}, {publication.year}</p>
+            <p>Journal: {publication.journal}, {publication.year}</p>
             <a href={publication.doi} target="_blank" rel="noopener noreferrer">
               View Work
             </a>
