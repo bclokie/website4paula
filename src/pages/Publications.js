@@ -8,7 +8,7 @@ const Publications = () => {
     {
       title: 'Integrating Behavioral Science and Design Thinking to Develop Mobile Health Interventions: Systematic Scoping Review',
       authors: 'Voorheis P, Zhao A, Kuluski K, Pham Q, Scott T, Sztur P, Khanna N, Ibrahim M, Petch J',
-      journal: 'JMIR Mhealth Uhealth',
+      journal: 'JMIR mHealth & uHealth',
       year: 2022,
       doi: 'https://doi.org/10.2196/35799',
     },
