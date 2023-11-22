@@ -1,33 +1,52 @@
-import React from 'react';
-import './PublishedWorks.css';
+// Publications.js
 
-const PublishedWorks = () => {
-  const works = [
+import React from 'react';
+import './Publications.css';
+
+const Publications = () => {
+  const publications = [
     {
-      title: 'Title 1',
-      authors: 'Author 1, Author 2',
+      title: 'Integrating Behavioral Science and Design Thinking to Develop Mobile Health Interventions: Systematic Scoping Review',
+      authors: 'Voorheis P, Zhao A, Kuluski K, Pham Q, Scott T, Sztur P, Khanna N, Ibrahim M, Petch J',
       publicationYear: 2022,
-      link: 'https://example.com/work1',
+      link: 'https://doi.org/10.2196/35799',
     },
     {
-      title: 'Title 2',
-      authors: 'Author 3, Author 4',
-      publicationYear: 2021,
-      link: 'https://example.com/work2',
+      title: 'Making Sense of Theories, Models, and Frameworks in Digital Health Behavior Change Design: Qualitative Descriptive Study',
+      authors: 'Voorheis P, Bhuiya AR, Kuluski K, Pham Q, Petch J',
+      publicationYear: 2023,
+      link: 'https://doi.org/10.2196/45095',
     },
-    // Add more works as needed
+    {
+      title: 'Maximizing the value of patient and public involvement in the digital health co-design process: A qualitative study with design leaders and patient-public partners',
+      authors: 'Voorheis P, Kuluski K, Pham Q, Petch J',
+      publicationYear: 2023,
+      link: 'https://doi.org/10.1371/journal.pdig.0000213',
+    },
+    {
+      title: 'Understanding and Supporting Active Travel in Older Adults using Behavioural Science: Systematic Scoping Review and Strategic Behavioural Analysis',
+      authors: 'Voorheis P, Hasnain SM, Silver M, Aitken I, Widener M',
+      publicationYear: 2023,
+      link: 'https://doi.org/10.1016/j.jth.2023.101602',
+    },
+    {
+      title: 'Adaptation to life after sport for retired athletes: A scoping review of existing reviews and programs',
+      authors: 'Voorheis P, M Silver, Consonni J',
+      publicationYear: 2023,
+      link: 'https://doi.org/10.1371/journal.pone.0291683',
+    },
   ];
 
   return (
     <div className="published-works-container">
       <h2 className="works-title">Published Works</h2>
       <ul className="works-list">
-        {works.map((work, index) => (
+        {publications.map((publication, index) => (
           <li key={index} className="work-item">
-            <h3>{work.title}</h3>
-            <p>Authors: {work.authors}</p>
-            <p>Year: {work.publicationYear}</p>
-            <a href={work.link} target="_blank" rel="noopener noreferrer">
+            <h3>{publication.title}</h3>
+            <p>Authors: {publication.authors}</p>
+            <p>Year: {publication.publicationYear}</p>
+            <a href={publication.link} target="_blank" rel="noopener noreferrer">
               View Work
             </a>
           </li>
@@ -37,4 +56,4 @@ const PublishedWorks = () => {
   );
 };
 
-export default PublishedWorks;
+export default Publications;

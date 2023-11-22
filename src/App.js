@@ -7,7 +7,7 @@ import MyWork from './pages/MyWork';
 import RecentUpdates from './pages/RecentUpdates';
 import Contact from './pages/Contact';
 import ToolsandModels from './pages/ToolsandModels';
-// import Publications from './pages/Publications';
+import Publications from './pages/Publications';
 // import TalksandWorkshops from './pages/TalksandWorkshops';
 import './App.css';
 
@@ -24,8 +24,8 @@ const App = () => {
             <Route path="/recent-updates" element={<RecentUpdates />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/tools+models" element={<ToolsandModels />} />
-            {/* <Route path="/publications" element={<Publications />} />
-            <Route path="/talks+workshops" element={<TalksandWorkshops />} /> */}
+            <Route path="/publications" element={<Publications />} />
+            {/* <Route path="/talks+workshops" element={<TalksandWorkshops />} /> */}
           </Routes>
         </div>
       </div>
