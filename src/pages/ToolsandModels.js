@@ -8,7 +8,7 @@ const ToolsandModels = () => {
   return (
     <div className="tools-methods-container">
       <div className="work-title-container">
-        <h2 className="work-title">Tools and Methods</h2>
+        <h2 className="work-title">Tools and Models</h2>
         <div className="header-line"></div>
       </div>
       <div className="work-items">
