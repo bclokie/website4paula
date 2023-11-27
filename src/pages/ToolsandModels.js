@@ -22,18 +22,18 @@ const ToolsandModels = () => {
         </p>
         <div className="work-items">
           <div className="work-item">
-            <img src="https://picsum.photos/300/200" alt="Playbook" />
             <h3>Playbook</h3>
+            <img src="https://picsum.photos/300/200" alt="Playbook" />
             <p>Behavioral Design Thinking</p>
           </div>
           <div className="work-item">
-            <img src="https://picsum.photos/300/200" alt="Model" />
             <h3>Model</h3>
+            <img src="https://picsum.photos/300/200" alt="Model" />
             <p>Design Methods for “Effectively Engaging” Digital Health Interventions</p>
           </div>
           <div className="work-item">
-            <img src="https://picsum.photos/300/200" alt="Insights" />
             <h3>Insights</h3>
+            <img src="https://picsum.photos/300/200" alt="Insights" />
             <p>Behavioral Design Thinking Considerations and Challenges</p>
           </div>
         </div>
@@ -49,18 +49,18 @@ const ToolsandModels = () => {
         </p>
         <div className="work-items">
           <div className="work-item">
-            <img src="https://picsum.photos/300/200" alt="Toolkit" />
             <h3>Toolkit</h3>
+            <img src="https://picsum.photos/300/200" alt="Toolkit" />
             <p>Types of Behavioral Design Tools</p>
           </div>
           <div className="work-item">
-            <img src="https://picsum.photos/300/200" alt="Guidance" />
             <h3>Guidance</h3>
+            <img src="https://picsum.photos/300/200" alt="Guidance" />
             <p>How to Select Behavioral Design Tools</p>
           </div>
           <div className="work-item">
-            <img src="https://picsum.photos/300/200" alt="Recommendations" />
             <h3>Recommendations</h3>
+            <img src="https://picsum.photos/300/200" alt="Recommendations" />
             <p>How to Improve Behavioral Design Tools</p>
           </div>
         </div>
@@ -76,13 +76,13 @@ const ToolsandModels = () => {
         </p>
         <div className="work-items">
           <div className="work-item">
-            <img src="https://picsum.photos/300/200" alt="Playbook" />
             <h3>Playbook</h3>
+            <img src="https://picsum.photos/300/200" alt="Playbook" />
             <p>Co-Design Process for Maximal Value</p>
           </div>
           <div className="work-item">
-            <img src="https://picsum.photos/300/200" alt="Insights" />
             <h3>Insights</h3>
+            <img src="https://picsum.photos/300/200" alt="Insights" />
             <p>How Co-Design Adds Value</p>
           </div>
         </div>
@@ -97,8 +97,8 @@ const ToolsandModels = () => {
         </p>
         <div className="work-items">
           <div className="work-item">
-            <img src="https://picsum.photos/300/200" alt="Playbook" />
             <h3>Playbook</h3>
+            <img src="https://picsum.photos/300/200" alt="Playbook" />
             <p>Strategic Behavioural Analysis</p>
           </div>
         </div>
