@@ -12,28 +12,50 @@
   animation: riseUp 1s ease-out;
 }
 
-.tools-methods-container .work-items {
+.work-items {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 50px;
   margin-bottom: 30px;
   animation: grow 1s ease-out;
 }
 
+.work-item {
+  margin-bottom: 20px;
+  width: calc(30% - 20px); /* Adjust width based on the number of items in a row */
+}
+
+.header-line {
+  width: 100px;
+}
+
+.header-line::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(5vw);
+  height: 4px;
+  background-color: purple;
+  border-radius: 1px;
+}
+
 /* Media Query for Portrait Mode */
 @media screen and (orientation: portrait) {
-  .tools-methods-container .work-items {
+  .work-items {
     margin: 20px auto;
     position: relative;
     flex-direction: column;
   }
   
-  .tools-methods-container .work-item {
+  .work-item {
     margin-bottom: 20px;
+    width: 100%; /* Take full width in portrait mode */
   }
 
-  .tools-methods-container .header-line {
+  .header-line {
     width: 100vw;
   }
 }
