@@ -23,18 +23,18 @@ const ToolsandModels = () => {
         <div className="work-items">
           <div className="work-item">
             <img src="https://picsum.photos/300/200" alt="Playbook" />
-            <h3>Playbook: Behavioral Design Thinking</h3>
-            <p>Explanation for the playbook goes here.</p>
+            <h3>Playbook</h3>
+            <p>Behavioral Design Thinking</p>
           </div>
           <div className="work-item">
             <img src="https://picsum.photos/300/200" alt="Model" />
-            <h3>Model: Design Methods for “Effectively Engaging” Digital Health Interventions</h3>
-            <p>Explanation for the model goes here.</p>
+            <h3>Model</h3>
+            <p>Design Methods for “Effectively Engaging” Digital Health Interventions</p>
           </div>
           <div className="work-item">
             <img src="https://picsum.photos/300/200" alt="Insights" />
-            <h3>Insights: Behavioral Design Thinking Considerations and Challenges</h3>
-            <p>Explanation for the insights goes here.</p>
+            <h3>Insights</h3>
+            <p>Behavioral Design Thinking Considerations and Challenges</p>
           </div>
         </div>
       </div>
@@ -50,18 +50,18 @@ const ToolsandModels = () => {
         <div className="work-items">
           <div className="work-item">
             <img src="https://picsum.photos/300/200" alt="Toolkit" />
-            <h3>Toolkit: Types of Behavioral Design Tools</h3>
-            <p>Explanation for the toolkit goes here.</p>
+            <h3>Toolkit</h3>
+            <p>Types of Behavioral Design Tools</p>
           </div>
           <div className="work-item">
             <img src="https://picsum.photos/300/200" alt="Guidance" />
-            <h3>Guidance: How to Select Behavioral Design Tools</h3>
-            <p>Explanation for the guidance goes here.</p>
+            <h3>Guidance</h3>
+            <p>How to Select Behavioral Design Tools</p>
           </div>
           <div className="work-item">
             <img src="https://picsum.photos/300/200" alt="Recommendations" />
-            <h3>Recommendations: How to Improve Behavioral Design Tools</h3>
-            <p>Explanation for the recommendations goes here.</p>
+            <h3>Recommendations</h3>
+            <p>How to Improve Behavioral Design Tools</p>
           </div>
         </div>
       </div>
@@ -77,13 +77,13 @@ const ToolsandModels = () => {
         <div className="work-items">
           <div className="work-item">
             <img src="https://picsum.photos/300/200" alt="Playbook" />
-            <h3>Playbook: Co-Design Process for Maximal Value</h3>
-            <p>Explanation for the playbook goes here.</p>
+            <h3>Playbook</h3>
+            <p>Co-Design Process for Maximal Value</p>
           </div>
           <div className="work-item">
             <img src="https://picsum.photos/300/200" alt="Insights" />
-            <h3>Insights: How Co-Design Adds Value</h3>
-            <p>Explanation for the insights goes here.</p>
+            <h3>Insights</h3>
+            <p>How Co-Design Adds Value</p>
           </div>
         </div>
       </div>
@@ -98,8 +98,8 @@ const ToolsandModels = () => {
         <div className="work-items">
           <div className="work-item">
             <img src="https://picsum.photos/300/200" alt="Playbook" />
-            <h3>Playbook: Strategic Behavioural Analysis</h3>
-            <p>Explanation for the playbook goes here.</p>
+            <h3>Playbook</h3>
+            <p>Strategic Behavioural Analysis</p>
           </div>
         </div>
       </div>
