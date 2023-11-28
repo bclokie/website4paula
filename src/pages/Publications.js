@@ -6,41 +6,81 @@ import './Publications.css';
 const Publications = () => {
   const publications = [
     {
-      title: 'Integrating Behavioral Science and Design Thinking to Develop Mobile Health Interventions: Systematic Scoping Review',
-      authors: 'Voorheis P, Zhao A, Kuluski K, Pham Q, Scott T, Sztur P, Khanna N, Ibrahim M, Petch J',
-      journal: 'JMIR mHealth & uHealth',
+      title: (
+        <span>
+          <b>Integrating Behavioral Science and Design Thinking to Develop Mobile Health Interventions:</b> <i>Systematic Scoping Review</i>
+        </span>
+      ),
+      authors: (
+        <span>
+          <b>Voorheis P</b>, Zhao A, Kuluski K, Pham Q, Scott T, Sztur P, Khanna N, Ibrahim M, Petch J
+        </span>
+      ),
+      journal: <i>JMIR mHealth & uHealth</i>,
       year: 2022,
       doi: 'https://doi.org/10.2196/35799',
     },
     {
-      title: 'Making Sense of Theories, Models, and Frameworks in Digital Health Behavior Change Design: Qualitative Descriptive Study',
-      authors: 'Voorheis P, Bhuiya AR, Kuluski K, Pham Q, Petch J',
-      journal: 'Journal of Medical Internet Research',
+      title: (
+        <span>
+          <b>Making Sense of Theories, Models, and Frameworks in Digital Health Behavior Change Design:</b> <i>Qualitative Descriptive Study</i>
+        </span>
+      ),
+      authors: (
+        <span>
+          <b>Voorheis P</b>, Bhuiya AR, Kuluski K, Pham Q, Petch J
+        </span>
+      ),
+      journal: <i>Journal of Medical Internet Research</i>,
       year: 2023,
       doi: 'https://doi.org/10.2196/45095',
     },
     {
-      title: 'Maximizing the value of patient and public involvement in the digital health co-design process: A qualitative study with design leaders and patient-public partners',
-      authors: 'Voorheis P, Kuluski K, Pham Q, Petch J',
-      journal: 'PLOS Digital Health',
+      title: (
+        <span>
+          <b>Maximizing the value of patient and public involvement in the digital health co-design process:</b> <i>A qualitative study with design leaders and patient-public partners</i>
+        </span>
+      ),
+      authors: (
+        <span>
+          <b>Voorheis P</b>, Kuluski K, Pham Q, Petch J
+        </span>
+      ),
+      journal: <i>PLOS Digital Health</i>,
       year: 2023,
       doi: 'https://doi.org/10.1371/journal.pdig.0000213',
     },
     {
-      title: 'Understanding and Supporting Active Travel in Older Adults using Behavioural Science: Systematic Scoping Review and Strategic Behavioural Analysis',
-      authors: 'Voorheis P, Hasnain SM, Silver M, Aitken I, Widener M',
-      journal: 'Journal of Transport & Health',
+      title: (
+        <span>
+          <b>Understanding and Supporting Active Travel in Older Adults using Behavioural Science:</b> <i>Systematic Scoping Review and Strategic Behavioural Analysis</i>
+        </span>
+      ),
+      authors: (
+        <span>
+          <b>Voorheis P</b>, Hasnain SM, Silver M, Aitken I, Widener M
+        </span>
+      ),
+      journal: <i>Journal of Transport & Health</i>,
       year: 2023,
       doi: 'https://doi.org/10.1016/j.jth.2023.101602',
     },
     {
-      title: 'Adaptation to life after sport for retired athletes: A scoping review of existing reviews and programs',
-      authors: 'Voorheis P, M Silver, Consonni J',
-      journal: 'PLOS One',
+      title: (
+        <span>
+          <b>Adaptation to life after sport for retired athletes:</b> <i>A scoping review of existing reviews and programs</i>
+        </span>
+      ),
+      authors: (
+        <span>
+          <b>Voorheis P</b>, M Silver, Consonni J
+        </span>
+      ),
+      journal: <i>PLOS One</i>,
       year: 2023,
       doi: 'https://doi.org/10.1371/journal.pone.0291683',
     },
-  ];
+  ];  
 
   return (
     <div className="my-work-container">
