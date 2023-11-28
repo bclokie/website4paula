@@ -56,7 +56,7 @@ const Publications = () => {
       </div>
       <ul className="works-list">
         {publications.map((publication, index) => (
-          <li key={index} className="work-item">
+          <li key={index} className="publication">
             <h3>{publication.title}</h3>
             <p>{publication.authors}</p>
             <p>{publication.journal}, {publication.year}</p>

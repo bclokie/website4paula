@@ -17,24 +17,24 @@
   padding: 0;
 }
 
-.work-item {
+.publication {
   margin-bottom: 20px;
   border: 2px solid #ccc;
   padding: 15px;
   border-radius: 10px;
 }
 
-.work-item h3 {
+.publication h3 {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-.work-item p {
+.publication p {
   font-size: 16px;
   margin: 5px 0;
 }
 
-.work-item a {
+.publication a {
   display: block;
   color: #007bff;
   text-decoration: none;
