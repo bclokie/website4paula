@@ -1,9 +1,15 @@
 // TalksandWorkshops.js
 
-import React from 'react';
+import React, { useState } from 'react';
 import './TalksandWorkshops.css';
 
 const TalksandWorkshops = () => {
+  const [activeImageIndex, setActiveImageIndex] = useState(0);
+
+  const handleImageChange = (increment) => {
+    const newIndex = (activeImageIndex + increment + 5) % 5; // 5 is the total number of images
+    setActiveImageIndex(newIndex);
+  };
   return (
     <div className="talks-workshops-container">
       <div className="work-title-container">
@@ -17,17 +23,11 @@ const TalksandWorkshops = () => {
           I have had the opportunity to present at many different academic conferences in my field. Below is a short list of key conferences I have presented at.
         </p>
         <div className="talks-workshops-images">
-          {/* First row with three images */}
-          <div className="image-row">
-            {[...Array(3)].map((_, index) => (
-              <img key={index} src={`/S1.${index + 1}.png`} alt={`Conference ${index + 1}`} />
-            ))}
-          </div>
-          {/* Second row with two images */}
-          <div className="image-row">
-            {[...Array(2)].map((_, index) => (
-              <img key={index + 3} src={`/S1.${index + 4}.png`} alt={`Conference ${index + 4}`} />
-            ))}
+          {/* Empty box for one image at a time */}
+          <div className="single-image-box">
+            <img src={`/S1.${activeImageIndex + 1}.png`} alt={`Conference ${activeImageIndex + 1}`} />
+            <div className="arrow left" onClick={() => handleImageChange(-1)}>&#9665;</div>
+            <div className="arrow right" onClick={() => handleImageChange(1)}>&#9655;</div>
           </div>
         </div>
       </div>
@@ -38,11 +38,13 @@ const TalksandWorkshops = () => {
         <p>
           I have had the opportunity to run several design workshops for organizations in need of expertise on co-design and designing behavior change interventions. Below are some of the organizations I have worked with to run these workshops.
         </p>
-        {/* Images for Section 2 */}
-        <div className="image-row">
-          {[...Array(3)].map((_, index) => (
-            <img key={index} src={`/S2.${index + 1}.png`} alt={`Co-Design Workshop ${index + 1}`} />
-          ))}
+        <div className="talks-workshops-images">
+          {/* Empty box for one image at a time */}
+          <div className="single-image-box">
+            <img src={`/S2.${activeImageIndex + 1}.png`} alt={`Co-Design Workshop ${activeImageIndex + 1}`} />
+            <div className="arrow left" onClick={() => handleImageChange(-1)}>&#9665;</div>
+            <div className="arrow right" onClick={() => handleImageChange(1)}>&#9655;</div>
+          </div>
         </div>
       </div>
 
