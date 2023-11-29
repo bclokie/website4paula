@@ -8,7 +8,7 @@ const Publications = () => {
     {
       title: (
         <span>
-          <b>Integrating Behavioral Science and Design Thinking to Develop Mobile Health Interventions:</b> <i>Systematic Scoping Review</i>
+          <b>Integrating Behavioral Science and Design Thinking to Develop Mobile Health Interventions:</b> Systematic Scoping Review
         </span>
       ),
       authors: (
@@ -23,7 +23,7 @@ const Publications = () => {
     {
       title: (
         <span>
-          <b>Making Sense of Theories, Models, and Frameworks in Digital Health Behavior Change Design:</b> <i>Qualitative Descriptive Study</i>
+          <b>Making Sense of Theories, Models, and Frameworks in Digital Health Behavior Change Design:</b> Qualitative Descriptive Study
         </span>
       ),
       authors: (
@@ -38,7 +38,7 @@ const Publications = () => {
     {
       title: (
         <span>
-          <b>Maximizing the value of patient and public involvement in the digital health co-design process:</b> <i>A qualitative study with design leaders and patient-public partners</i>
+          <b>Maximizing the value of patient and public involvement in the digital health co-design process:</b> A qualitative study with design leaders and patient-public partners
         </span>
       ),
       authors: (
@@ -53,7 +53,7 @@ const Publications = () => {
     {
       title: (
         <span>
-          <b>Understanding and Supporting Active Travel in Older Adults using Behavioural Science:</b> <i>Systematic Scoping Review and Strategic Behavioural Analysis</i>
+          <b>Understanding and Supporting Active Travel in Older Adults using Behavioural Science:</b> Systematic Scoping Review and Strategic Behavioural Analysis
         </span>
       ),
       authors: (
@@ -68,7 +68,7 @@ const Publications = () => {
     {
       title: (
         <span>
-          <b>Adaptation to life after sport for retired athletes:</b> <i>A scoping review of existing reviews and programs</i>
+          <b>Adaptation to life after sport for retired athletes:</b> A scoping review of existing reviews and programs
         </span>
       ),
       authors: (
@@ -80,7 +80,8 @@ const Publications = () => {
       year: 2023,
       doi: 'https://doi.org/10.1371/journal.pone.0291683',
     },
-  ];  
+  ];
+  
 
   return (
     <div className="my-work-container">
