@@ -6,10 +6,6 @@ import './TalksandWorkshops.css';
 const TalksandWorkshops = () => {
   return (
     <div className="talks-workshops-container">
-      <div className="work-title-container">
-        <h2 className="work-title">Talks and Workshops</h2>
-        <div className="header-line"></div>
-      </div>
       {/* Section 1: Academic Speaking and Presenting */}
       <div className="talks-workshops-section">
         <h2>Academic Speaking and Presenting</h2>
@@ -19,7 +15,7 @@ const TalksandWorkshops = () => {
         <div className="talks-workshops-images">
           {/* Insert 5 images */}
           {[...Array(5)].map((_, index) => (
-            <img key={index} src="https://via.placeholder.com/200" alt={`Conference ${index + 1}`} />
+            <img key={index} src={`/S1.${index + 1}.png`} alt={`Conference ${index + 1}`} />
           ))}
         </div>
       </div>
@@ -33,7 +29,7 @@ const TalksandWorkshops = () => {
         <div className="talks-workshops-images">
           {/* Insert 3 images */}
           {[...Array(3)].map((_, index) => (
-            <img key={index} src="https://via.placeholder.com/200" alt={`Workshop Organization ${index + 1}`} />
+            <img key={index} src={`/S2.${index + 1}.png`} alt={`Workshop Organization ${index + 1}`} />
           ))}
         </div>
       </div>
@@ -47,7 +43,7 @@ const TalksandWorkshops = () => {
         <div className="talks-workshops-images">
           {/* Insert 2 images */}
           {[...Array(2)].map((_, index) => (
-            <img key={index} src="https://via.placeholder.com/200" alt={`Company ${index + 1}`} />
+            <img key={index} src={`/S3.${index + 1}.png`} alt={`Company ${index + 1}`} />
           ))}
         </div>
       </div>
@@ -60,7 +56,7 @@ const TalksandWorkshops = () => {
         </p>
         <div className="talks-workshops-images">
           {/* Insert 1 image */}
-          <img src="https://via.placeholder.com/200" alt="Teaching" />
+          <img src="/S4.1.png" alt="Teaching" />
         </div>
       </div>
     </div>
