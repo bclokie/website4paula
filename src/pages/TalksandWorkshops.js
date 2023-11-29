@@ -13,10 +13,18 @@ const TalksandWorkshops = () => {
           I have had the opportunity to present at many different academic conferences in my field. Below is a short list of key conferences I have presented at.
         </p>
         <div className="talks-workshops-images">
-          {/* Insert 5 images */}
-          {[...Array(5)].map((_, index) => (
-            <img key={index} src={`/S1.${index + 1}.png`} alt={`Conference ${index + 1}`} />
-          ))}
+          {/* First row with three images */}
+          <div className="image-row">
+            {[...Array(3)].map((_, index) => (
+              <img key={index} src={`/S1.${index + 1}.png`} alt={`Conference ${index + 1}`} />
+            ))}
+          </div>
+          {/* Second row with two images */}
+          <div className="image-row">
+            {[...Array(2)].map((_, index) => (
+              <img key={index + 3} src={`/S1.${index + 4}.png`} alt={`Conference ${index + 4}`} />
+            ))}
+          </div>
         </div>
       </div>
 
@@ -26,10 +34,10 @@ const TalksandWorkshops = () => {
         <p>
           I have had the opportunity to run several design workshops for organizations in need of expertise on co-design and designing behavior change interventions. Below are some of the organizations I have worked with to run these workshops.
         </p>
-        <div className="talks-workshops-images">
-          {/* Insert 3 images */}
+        {/* Images for Section 2 */}
+        <div className="image-row">
           {[...Array(3)].map((_, index) => (
-            <img key={index} src={`/S2.${index + 1}.png`} alt={`Workshop Organization ${index + 1}`} />
+            <img key={index} src={`/S2.${index + 1}.png`} alt={`Co-Design Workshop ${index + 1}`} />
           ))}
         </div>
       </div>
@@ -38,12 +46,12 @@ const TalksandWorkshops = () => {
       <div className="talks-workshops-section">
         <h2>Company Presentations</h2>
         <p>
-          I am available to give presentations to companies and organizations interested in educating their staff on designing interventions using insights from behavioral science and design science. Below are some of the companies I have presented to.
+          I am available to give presentations to companies and organizations who are interested in educating their staff on designing interventions using insights from behavioral science and design science. Below are some of the companies I have presented to.
         </p>
-        <div className="talks-workshops-images">
-          {/* Insert 2 images */}
+        {/* Images for Section 3 */}
+        <div className="image-row">
           {[...Array(2)].map((_, index) => (
-            <img key={index} src={`/S3.${index + 1}.png`} alt={`Company ${index + 1}`} />
+            <img key={index} src={`/S3.${index + 1}.png`} alt={`Company Presentation ${index + 1}`} />
           ))}
         </div>
       </div>
@@ -54,10 +62,8 @@ const TalksandWorkshops = () => {
         <p>
           My teaching has involved guest lecturing for several courses at the Institute of Health Policy, Management and Evaluation at the University of Toronto.
         </p>
-        <div className="talks-workshops-images">
-          {/* Insert 1 image */}
-          <img src="/S4.1.png" alt="Teaching" />
-        </div>
+        {/* Image for Section 4 */}
+        <img src="/S4.1.png" alt="Teaching" />
       </div>
     </div>
   );
