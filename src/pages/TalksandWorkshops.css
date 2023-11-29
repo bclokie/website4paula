@@ -19,13 +19,13 @@
 .image-row {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-bottom: 15px;
 }
 
 .talks-workshops-images img {
-  width: 200px;
-  height: 200px;
+  width: 30%;
+  height: fit-content;
   object-fit: cover;
   margin-right: 10px;
   margin-bottom: 10px;
