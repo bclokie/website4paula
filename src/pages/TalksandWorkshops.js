@@ -6,6 +6,10 @@ import './TalksandWorkshops.css';
 const TalksandWorkshops = () => {
   return (
     <div className="talks-workshops-container">
+      <div className="work-title-container">
+        <h2 className="work-title">Talks and Workshops</h2>
+        <div className="header-line"></div>
+      </div>
       {/* Section 1: Academic Speaking and Presenting */}
       <div className="talks-workshops-section">
         <h2>Academic Speaking and Presenting</h2>
