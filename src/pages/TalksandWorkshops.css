@@ -1,5 +1,7 @@
 /* TalksandWorkshops.css */
 
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
 .talks-workshops-container {
   padding: 20px;
   text-align: center;
@@ -39,10 +41,8 @@
 
 .single-image-box {
   position: relative;
-  width: 50%;
   overflow: hidden;
   margin: 10px auto;
-  height: 50%; /* Set a fixed height for better visibility */
 }
 
 .single-image-box img {
@@ -51,18 +51,22 @@
   object-fit: cover;
 }
 
-.arrow {
+.icon {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 25px;
   cursor: pointer;
+  font-size: 25px;
+  color: #333; /* Adjust the color as needed */
 }
 
-.arrow.left {
+.icon.left {
   left: 5px;
 }
 
-.arrow.right {
-  right: 5px;
+.icon.right {
+  right: 5px;;
 }
+
+
+

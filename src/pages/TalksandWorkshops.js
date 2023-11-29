@@ -45,8 +45,12 @@ const TalksandWorkshops = () => {
           {/* Empty box for one image at a time */}
           <div className="single-image-box">
             <img src={`/S1.${activeImageIndex1 + 1}.png`} alt={`Conference ${activeImageIndex1 + 1}`} />
-            <div className="arrow left" onClick={() => handleImageChange(-1, 1)}>&#9665;</div>
-            <div className="arrow right" onClick={() => handleImageChange(1, 1)}>&#9655;</div>
+            <div className="icon left" onClick={() => handleImageChange(-1, 1)}>
+              <i className="fas fa-chevron-left"></i>
+            </div>
+            <div className="icon right" onClick={() => handleImageChange(1, 1)}>
+              <i className="fas fa-chevron-right"></i>
+            </div>
           </div>
         </div>
       </div>
@@ -61,8 +65,12 @@ const TalksandWorkshops = () => {
           {/* Empty box for one image at a time */}
           <div className="single-image-box">
             <img src={`/S2.${activeImageIndex2 + 1}.png`} alt={`Co-Design Workshop ${activeImageIndex2 + 1}`} />
-            <div className="arrow left" onClick={() => handleImageChange(-1, 2)}>&#9665;</div>
-            <div className="arrow right" onClick={() => handleImageChange(1, 2)}>&#9655;</div>
+            <div className="icon left" onClick={() => handleImageChange(-1, 2)}>
+              <i className="fas fa-chevron-left"></i>
+            </div>
+            <div className="icon right" onClick={() => handleImageChange(1, 2)}>
+              <i className="fas fa-chevron-right"></i>
+            </div>
           </div>
         </div>
       </div>
