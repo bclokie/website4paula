@@ -1,71 +1,24 @@
-body, html {
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-}
+/* TalksandWorkshops.css */
 
-.talks-and-workshops-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+.talks-workshops-container {
   padding: 20px;
   text-align: center;
-  height: 90vh;
-  background-attachment: fixed;
-  background: linear-gradient(to bottom right, #a48ad4, #6a0572);
 }
 
-.work-title {
-  font-weight: bold;
-  font-size: 24px;
-  margin-bottom: 20px;
-  padding: 10px 20px;
-  border: 2px solid pink;
-  border-radius: 20px;
-  background-color: white;
+.talks-workshops-section {
+  margin-bottom: 40px;
 }
 
-.work-items {
+.talks-workshops-images {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
-.work-item {
-  margin-bottom: 0;
-  margin-right: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  border: 3px solid pink;
-  border-radius: 20px;
-  background-color: white;
-}
-
-.work-item img {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 10px;
+.talks-workshops-images img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 10px;
   margin-bottom: 10px;
-}
-
-.work-item h3 {
-  font-weight: bold;
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.work-item p {
-  font-size: 16px;
-  color: #555;
-}
-
-/* Media Query for Portrait Mode */
-@media screen and (orientation: portrait) {
-  .work-items {
-    flex-direction: column;
-  }
 }
