@@ -40,9 +40,9 @@
   position: relative;
   width: 30%;
   overflow: hidden;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  height: 200px; /* Set a fixed height for better visibility */
+  margin: 10px auto;
+  height: 400px; /* Set a fixed height for better visibility */
+  width: 600px;
 }
 
 .single-image-box img {
