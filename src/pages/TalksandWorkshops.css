@@ -30,3 +30,8 @@
   margin-right: 10px;
   margin-bottom: 10px;
 }
+
+.talks-workshops-section h2 {
+  font: 400 1.5em/1.5em "Roboto", sans-serif;
+  margin-bottom: 5px;
+}
