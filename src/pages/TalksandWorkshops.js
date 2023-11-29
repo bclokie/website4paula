@@ -4,18 +4,37 @@ import React, { useState } from 'react';
 import './TalksandWorkshops.css';
 
 const TalksandWorkshops = () => {
-  const [activeImageIndex, setActiveImageIndex] = useState(0);
+  const [activeImageIndex1, setActiveImageIndex1] = useState(0);
+  const [activeImageIndex2, setActiveImageIndex2] = useState(0);
+  const [activeImageIndex3, setActiveImageIndex3] = useState(0);
 
-  const handleImageChange = (increment) => {
-    const newIndex = (activeImageIndex + increment + 5) % 5; // 5 is the total number of images
-    setActiveImageIndex(newIndex);
+  const handleImageChange = (increment, section) => {
+    let newIndex;
+    switch (section) {
+      case 1:
+        newIndex = (activeImageIndex1 + increment + 5) % 5;
+        setActiveImageIndex1(newIndex);
+        break;
+      case 2:
+        newIndex = (activeImageIndex2 + increment + 3) % 3; // Adjust for 3 slides
+        setActiveImageIndex2(newIndex);
+        break;
+      case 3:
+        newIndex = (activeImageIndex3 + increment + 2) % 2; // Adjust for 2 slides
+        setActiveImageIndex3(newIndex);
+        break;
+      default:
+        break;
+    }
   };
+
   return (
     <div className="talks-workshops-container">
       <div className="work-title-container">
         <h2 className="work-title">Talks and Workshops</h2>
         <div className="header-line"></div>
       </div>
+
       {/* Section 1: Academic Speaking and Presenting */}
       <div className="talks-workshops-section">
         <h2>Academic Speaking and Presenting</h2>
@@ -25,9 +44,9 @@ const TalksandWorkshops = () => {
         <div className="talks-workshops-images">
           {/* Empty box for one image at a time */}
           <div className="single-image-box">
-            <img src={`/S1.${activeImageIndex + 1}.png`} alt={`Conference ${activeImageIndex + 1}`} />
-            <div className="arrow left" onClick={() => handleImageChange(-1)}>&#9665;</div>
-            <div className="arrow right" onClick={() => handleImageChange(1)}>&#9655;</div>
+            <img src={`/S1.${activeImageIndex1 + 1}.png`} alt={`Conference ${activeImageIndex1 + 1}`} />
+            <div className="arrow left" onClick={() => handleImageChange(-1, 1)}>&#9665;</div>
+            <div className="arrow right" onClick={() => handleImageChange(1, 1)}>&#9655;</div>
           </div>
         </div>
       </div>
@@ -41,9 +60,9 @@ const TalksandWorkshops = () => {
         <div className="talks-workshops-images">
           {/* Empty box for one image at a time */}
           <div className="single-image-box">
-            <img src={`/S2.${activeImageIndex + 1}.png`} alt={`Co-Design Workshop ${activeImageIndex + 1}`} />
-            <div className="arrow left" onClick={() => handleImageChange(-1)}>&#9665;</div>
-            <div className="arrow right" onClick={() => handleImageChange(1)}>&#9655;</div>
+            <img src={`/S2.${activeImageIndex2 + 1}.png`} alt={`Co-Design Workshop ${activeImageIndex2 + 1}`} />
+            <div className="arrow left" onClick={() => handleImageChange(-1, 2)}>&#9665;</div>
+            <div className="arrow right" onClick={() => handleImageChange(1, 2)}>&#9655;</div>
           </div>
         </div>
       </div>
