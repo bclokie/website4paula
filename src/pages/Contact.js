@@ -4,6 +4,7 @@ import { FaEnvelope, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import './Contact.css';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+import gsap from 'gsap';
 
 const Contact = () => {
   useEffect(() => {
@@ -41,6 +42,29 @@ const Contact = () => {
         .bindPopup('Sinai Health, Toronto')
         .openPopup();
     }
+    const icons = document.querySelectorAll('.icon-wrapper');
+
+    gsap.set(icons, { scale: 1 }); // Set initial scale
+
+    icons.forEach((icon) => {
+      const hoverOverlay = document.createElement('div');
+      hoverOverlay.className = 'hover-overlay';
+      icon.appendChild(hoverOverlay);
+
+      icon.addEventListener('mouseenter', () => {
+        gsap.to(hoverOverlay, { duration: 0.3, width: '100%', height: '100%', opacity: 1 });
+        gsap.to(icon, { scale: 1.2, duration: 0.3 });
+      });
+
+      icon.addEventListener('mouseleave', () => {
+        gsap.to(hoverOverlay, { duration: 0.3, width: 0, height: 0, opacity: 0 });
+        gsap.to(icon, { scale: 1, duration: 0.3 });
+      });
+
+      icon.addEventListener('mousemove', (e) => {
+        gsap.set(hoverOverlay, { width: e.offsetX, height: e.offsetY });
+      });
+    });
   }, []);
 
   return (
