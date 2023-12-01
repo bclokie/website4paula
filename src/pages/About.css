@@ -89,7 +89,7 @@
 }
 
 .my-work-button {
-  margin-top: 40px; /* Added margin to separate the button from the text */
+  margin-top: 40px; 
   display: block;
   width: fit-content;
   padding: 15px 30px;
