@@ -45,7 +45,7 @@
 }
 
 .about-header h2 {
-  font-size: 36px; /* Match the font size of the MyWork header */
+  font-size: 36px; 
   margin-bottom: 10px; /* Match the margin-bottom of the MyWork header */
   padding: 10px 20px;
   background-color: white;
@@ -65,7 +65,7 @@
 
 .about-content {
   display: flex;
-  align-items: flex-start; /* Adjusted to align content to the start */
+  align-items: flex-start; 
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
