@@ -43,7 +43,7 @@ const About = () => {
                 <div className="education">
           {/* First Degree */}
           <div className="degree">
-            <img src="/placeholder-logo1.png" alt="Placeholder Logo 1" className="degree-logo" />
+            <img src="/cornell.svg" alt="Placeholder Logo 1" className="degree-logo" />
             <div className="degree-info">
               <h3 className="school-name">Cornell University</h3>
               <h4 className="degree-name">BSc in Biology &amp; Society</h4>
@@ -55,7 +55,7 @@ const About = () => {
 
           {/* Second Degree */}
           <div className="degree">
-            <img src="/placeholder-logo2.png" alt="Placeholder Logo 2" className="degree-logo" />
+            <img src="/LSHTM.svg" alt="Placeholder Logo 2" className="degree-logo" />
             <div className="degree-info">
               <h3 className="school-name">London School of Hygiene and Tropical Medicine</h3>
               <h4 className="degree-name">MSc in Public Health</h4>
@@ -67,7 +67,7 @@ const About = () => {
 
           {/* Third Degree */}
           <div className="degree">
-            <img src="/placeholder-logo3.png" alt="Placeholder Logo 3" className="degree-logo" />
+            <img src="/UofT.svg" alt="Placeholder Logo 3" className="degree-logo" />
             <div className="degree-info">
               <h3 className="school-name">University of Toronto</h3>
               <h4 className="degree-name">PhD in Health Services Research</h4>
