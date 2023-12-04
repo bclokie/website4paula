@@ -122,16 +122,13 @@
   }
 
   .about-text {
-    order: 1;
     margin-top: 20px; /* Adjusted margin */
     margin-bottom: 1.25rem;
   }
 
   .my-work-button {
-    order: 2;
     margin-top: 10%; /* Adjusted margin */
     font-size: 1rem;
-    margin-left: 50%;
-    margin-right: 50%;
+    margin: 0 auto;
     }
 }
