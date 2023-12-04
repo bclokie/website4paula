@@ -130,9 +130,8 @@
   .my-work-button {
     order: 2;
     margin-top: 10%; /* Adjusted margin */
-    position: static; /* Remove absolute positioning */
     font-size: 1rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 50%;
+    margin-right: 50%;
     }
 }
