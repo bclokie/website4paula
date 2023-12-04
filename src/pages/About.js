@@ -44,15 +44,16 @@ const About = () => {
         <p>
           My education includes:
           <br />
-          - BSc in Biology &amp; Society at Cornell University - Research focused on smoking cessation
+          BSc: Biology &amp; Society at Cornell University 
+          <br /> Research focused on smoking cessation 
           behaviour change.
           <br />
-          - MSc in Public Health at the London School of Hygiene and Tropical Medicine – Research
-          focused on using behavioural economic insights to improve public health nutrition
-          guidance.
+          MSc: Public Health at the London School of Hygiene and Tropical Medicine
+          <br /> Research
+          focused on using behavioural economic insights to improve public health nutritionguidance.
           <br />
-          - PhD in Health Services Research at University of Toronto - Research focused on using
-          behavioural science insights to improve the design of digital health interventions.
+          PhD: Health Services Research at University of Toronto
+          <br />  Research focused on using behavioural science insights to improve the design of digital health interventions.
         </p>
       </div>
       <div className="button">
