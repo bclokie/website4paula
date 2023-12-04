@@ -39,27 +39,25 @@ const About = () => {
             <br />
           </div>
         </div>
-      </div>
-      <div className="education">
-        <p>
-          My education includes:
-          <br />
-          BSc: Biology &amp; Society at Cornell University 
-          <br /> Research focused on smoking cessation 
-          behaviour change.
-          <br />
-          MSc: Public Health at the London School of Hygiene and Tropical Medicine
-          <br /> Research
-          focused on using behavioural economic insights to improve public health nutritionguidance.
-          <br />
-          PhD: Health Services Research at University of Toronto
-          <br />  Research focused on using behavioural science insights to improve the design of digital health interventions.
-        </p>
-      </div>
-      <div className="button">
-        <Link to="/my-work" className="my-work-button">
-          See My Work
-        </Link>
+        <div className="education">
+          <p>
+            My education includes:
+            <br />
+            BSc: Biology &amp; Society at Cornell University
+            <br /> Research focused on smoking cessation behavior change.
+            <br />
+            MSc: Public Health at the London School of Hygiene and Tropical Medicine
+            <br /> Research focused on using behavioural economic insights to improve public health nutrition guidance.
+            <br />
+            PhD: Health Services Research at University of Toronto
+            <br /> Research focused on using behavioural science insights to improve the design of digital health interventions.
+          </p>
+        </div>
+        <div className="button">
+          <Link to="/my-work" className="my-work-button">
+            See My Work
+          </Link>
+        </div>
       </div>
     </div>
   );
