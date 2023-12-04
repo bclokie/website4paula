@@ -1,9 +1,42 @@
 // About.js
-import React from 'react';
+import React, { useEffect } from 'react';
 import './About.css';
 import { Link } from 'react-router-dom';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const About = () => {
+  useEffect(() => {
+    // GSAP timeline for each degree animation
+    const degreeTimelines = gsap.utils.toArray('.degree').map((degree) => {
+      const timeline = gsap.timeline({ defaults: { ease: 'power1.out' } });
+      timeline.from(degree.querySelector('.degree-logo'), { opacity: 0, duration: 0.5 });
+      timeline.from(degree.querySelector('.degree-info'), { opacity: 0, x: 50, duration: 0.5 }, '-=0.3');
+
+      // Add ScrollTrigger to each degree animation
+      ScrollTrigger.create({
+        trigger: degree,
+        start: 'top 80%',
+        animation: timeline,
+      });
+
+      return timeline;
+    });
+
+    // ScrollTrigger for triggering animations on scroll
+    gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.batch('.animate', {
+      onEnter: (batch) => {
+        gsap.to(batch, { opacity: 1, stagger: 0.2 });
+      },
+    });
+
+    // Clean up GSAP when component unmounts
+    return () => {
+      degreeTimelines.forEach((timeline) => timeline.kill());
+    };
+  }, []);
+
   return (
     <div>
       <div className="about-container">
@@ -39,11 +72,11 @@ const About = () => {
             <br />
           </div>
         </div>
-                {/* Education Section */}
-                <div className="education">
-                  <p className= "education-intro"> My education includes:</p>
+        {/* Education Section */}
+        <div className="education">
+          <p className="education-intro">My education includes:</p>
           {/* First Degree */}
-          <div className="degree">
+          <div className="degree animate">
             <img src="/cornell.svg" alt="Placeholder Logo 1" className="degree-logo" />
             <div className="degree-info">
               <h3 className="school-name">Cornell University</h3>
@@ -53,9 +86,8 @@ const About = () => {
               </p>
             </div>
           </div>
-
           {/* Second Degree */}
-          <div className="degree">
+          <div className="degree animate">
             <img src="/LSHTM.svg" alt="Placeholder Logo 2" className="degree-logo" />
             <div className="degree-info">
               <h3 className="school-name">London School of Hygiene and Tropical Medicine</h3>
@@ -65,9 +97,8 @@ const About = () => {
               </p>
             </div>
           </div>
-
           {/* Third Degree */}
-          <div className="degree">
+          <div className="degree animate">
             <img src="/UofT.svg" alt="Placeholder Logo 3" className="degree-logo" />
             <div className="degree-info">
               <h3 className="school-name">University of Toronto</h3>
