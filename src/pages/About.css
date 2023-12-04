@@ -106,10 +106,9 @@
   background-color: #ff66b2; /* Darker pink on hover */
 }
 
-.education {
-  margin: 0 auto;
-  font-size: larger;
-  align-self: center;
+.education-intro {
+text-align: center;
+font-size: 1.5rem;
 }
 
 .degree {
