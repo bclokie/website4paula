@@ -107,7 +107,9 @@
 }
 
 .education {
-  margin-top: 40px; /* Adjusted margin */
+  margin: 0 auto;
+  font-size: larger;
+  align-self: center;
 }
 
 .degree {
@@ -117,8 +119,8 @@
 }
 
 .degree-logo {
-  max-width: 100px; /* Adjusted max width */
-  margin-right: 20px; /* Adjusted margin */
+  max-width: 150px; /* Adjusted max width */
+  margin-right: 40px; /* Adjusted margin */
 }
 
 .degree-info {

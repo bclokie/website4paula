@@ -41,6 +41,7 @@ const About = () => {
         </div>
                 {/* Education Section */}
                 <div className="education">
+                  <p> My education includes:</p>
           {/* First Degree */}
           <div className="degree">
             <img src="/cornell.svg" alt="Placeholder Logo 1" className="degree-logo" />
