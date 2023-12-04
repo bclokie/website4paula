@@ -2,41 +2,8 @@
 import React, { useEffect } from 'react';
 import './About.css';
 import { Link } from 'react-router-dom';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const About = () => {
-  useEffect(() => {
-    // GSAP timeline for each degree animation
-    const degreeTimelines = gsap.utils.toArray('.degree').map((degree) => {
-      const timeline = gsap.timeline({ defaults: { ease: 'power1.out' } });
-      timeline.from(degree.querySelector('.degree-logo'), { opacity: 0, duration: 0.5 });
-      timeline.from(degree.querySelector('.degree-info'), { opacity: 0, x: 50, duration: 0.5 }, '-=0.3');
-
-      // Add ScrollTrigger to each degree animation
-      ScrollTrigger.create({
-        trigger: degree,
-        start: 'top 80%',
-        animation: timeline,
-      });
-
-      return timeline;
-    });
-
-    // ScrollTrigger for triggering animations on scroll
-    gsap.registerPlugin(ScrollTrigger);
-    ScrollTrigger.batch('.animate', {
-      onEnter: (batch) => {
-        gsap.to(batch, { opacity: 1, stagger: 0.2 });
-      },
-    });
-
-    // Clean up GSAP when component unmounts
-    return () => {
-      degreeTimelines.forEach((timeline) => timeline.kill());
-    };
-  }, []);
-
   return (
     <div>
       <div className="about-container">
