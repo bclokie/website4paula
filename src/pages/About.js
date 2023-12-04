@@ -39,19 +39,43 @@ const About = () => {
             <br />
           </div>
         </div>
-        <div className="education">
-          <p>
-            My education includes:
-            <br />
-            BSc: Biology &amp; Society at Cornell University
-            <br /> Research focused on smoking cessation behavior change.
-            <br />
-            MSc: Public Health at the London School of Hygiene and Tropical Medicine
-            <br /> Research focused on using behavioural economic insights to improve public health nutrition guidance.
-            <br />
-            PhD: Health Services Research at University of Toronto
-            <br /> Research focused on using behavioural science insights to improve the design of digital health interventions.
-          </p>
+                {/* Education Section */}
+                <div className="education">
+          {/* First Degree */}
+          <div className="degree">
+            <img src="/placeholder-logo1.png" alt="Placeholder Logo 1" className="degree-logo" />
+            <div className="degree-info">
+              <h3 className="school-name">Cornell University</h3>
+              <h4 className="degree-name">BSc in Biology &amp; Society</h4>
+              <p className="degree-description">
+                Research focused on smoking cessation behavior change.
+              </p>
+            </div>
+          </div>
+
+          {/* Second Degree */}
+          <div className="degree">
+            <img src="/placeholder-logo2.png" alt="Placeholder Logo 2" className="degree-logo" />
+            <div className="degree-info">
+              <h3 className="school-name">London School of Hygiene and Tropical Medicine</h3>
+              <h4 className="degree-name">MSc in Public Health</h4>
+              <p className="degree-description">
+                Research focused on using behavioural economic insights to improve public health nutrition guidance.
+              </p>
+            </div>
+          </div>
+
+          {/* Third Degree */}
+          <div className="degree">
+            <img src="/placeholder-logo3.png" alt="Placeholder Logo 3" className="degree-logo" />
+            <div className="degree-info">
+              <h3 className="school-name">University of Toronto</h3>
+              <h4 className="degree-name">PhD in Health Services Research</h4>
+              <p className="degree-description">
+                Research focused on using behavioural science insights to improve the design of digital health interventions.
+              </p>
+            </div>
+          </div>
         </div>
         <div className="button">
           <Link to="/my-work" className="my-work-button">
