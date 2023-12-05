@@ -109,7 +109,7 @@
 .education-intro {
   text-align: center;
   font-size: 1.5rem;
-  animation: fadeIn 5s ease-in-out;
+  animation: fadeIn 3s ease-in-out;
 }
 
 @keyframes fadeIn {
@@ -126,8 +126,6 @@
   align-items: center;
   margin-bottom: 20px;
   opacity: 0; /* Initial opacity set to 0 */
-  transform: translateX(50%); /* Initial position off-screen to the right */
-  transition: opacity 2s ease, transform 2s ease;
 }
 
 .animate {
@@ -138,10 +136,22 @@
 .degree-logo {
   max-width: 150px;
   margin-right: 40px;
+  transform: translateX(-100%); /* Initial position off-screen to the left */
+  transition: transform 1.5s ease, fadeIn 2s ease;
 }
 
 .degree-info {
   flex: 1;
+  transform: translateX(100%); /* Initial position off-screen to the right */
+  transition: opacity 2s ease, transform 1.5s ease;
+}
+
+.animate .degree-logo {
+  transform: translateX(0); /* Move in from the left when animated */
+}
+
+.animate .degree-info {
+  transform: translateX(0); /* Move in from the right when animated */
 }
 
 .school-name {
