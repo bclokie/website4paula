@@ -109,7 +109,7 @@
 .education-intro {
   text-align: center;
   font-size: 1.5rem;
-  animation: fadeIn 3s ease-in-out;
+  animation: fadeIn 5s ease-in-out;
 }
 
 @keyframes fadeIn {
@@ -124,12 +124,20 @@
 .degree {
   display: flex;
   align-items: center;
-  margin-bottom: 20px; /* Adjusted margin */
+  margin-bottom: 20px;
+  opacity: 0; /* Initial opacity set to 0 */
+  transform: translateX(50%); /* Initial position off-screen to the right */
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .degree-logo {
-  max-width: 150px; /* Adjusted max width */
-  margin-right: 40px; /* Adjusted margin */
+  max-width: 150px;
+  margin-right: 40px;
 }
 
 .degree-info {
@@ -137,18 +145,18 @@
 }
 
 .school-name {
-  font-size: 24px; /* Bigger font for school name */
-  margin-bottom: 5px; /* Adjusted margin */
+  font-size: 24px;
+  margin-bottom: 5px;
 }
 
 .degree-name {
-  font-size: 20px; /* Bigger font for degree name */
-  margin-bottom: 5px; /* Adjusted margin */
+  font-size: 20px;
+  margin-bottom: 5px;
 }
 
 .degree-description {
   font-size: 16px;
-  margin-left: 20px; /* Moved description to the right */
+  margin-left: 20px;
   color: #555;
 }
 

@@ -1,9 +1,30 @@
 // About.js
-import React from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import './About.css';
 import { Link } from 'react-router-dom';
 
 const About = () => {
+  const degreesRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+          }
+        });
+      },
+      { threshold: 0.5 } // You can adjust the threshold based on your needs
+    );
+
+    observer.observe(degreesRef.current);
+
+    // Cleanup the observer on component unmount
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div>
       <div className="about-container">
@@ -40,10 +61,10 @@ const About = () => {
           </div>
         </div>
         {/* Education Section */}
-        <div className="education">
+        <div className="education" ref={degreesRef}>
           <p className="education-intro">My education includes:</p>
           {/* First Degree */}
-          <div className="degree animate">
+          <div className={`degree ${isVisible ? 'animate' : ''}`}>
             <img src="/cornell.svg" alt="Placeholder Logo 1" className="degree-logo" />
             <div className="degree-info">
               <h3 className="school-name">Cornell University</h3>
@@ -54,7 +75,7 @@ const About = () => {
             </div>
           </div>
           {/* Second Degree */}
-          <div className="degree animate">
+          <div className={`degree ${isVisible ? 'animate' : ''}`}>
             <img src="/LSHTM.svg" alt="Placeholder Logo 2" className="degree-logo" />
             <div className="degree-info">
               <h3 className="school-name">London School of Hygiene and Tropical Medicine</h3>
@@ -65,7 +86,7 @@ const About = () => {
             </div>
           </div>
           {/* Third Degree */}
-          <div className="degree animate">
+          <div className={`degree ${isVisible ? 'animate' : ''}`}>
             <img src="/UofT.svg" alt="Placeholder Logo 3" className="degree-logo" />
             <div className="degree-info">
               <h3 className="school-name">University of Toronto</h3>
