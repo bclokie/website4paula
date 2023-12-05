@@ -43,11 +43,10 @@
   position: relative;
   overflow: hidden;
   margin: 10px auto;
+  max-width: 50vw;
 }
 
 .single-image-box img {
-  width: fit-content;
-  height: fit-content;
   object-fit: cover;
 }
 
