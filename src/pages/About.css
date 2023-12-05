@@ -127,7 +127,7 @@
   margin-bottom: 20px;
   opacity: 0; /* Initial opacity set to 0 */
   transform: translateX(50%); /* Initial position off-screen to the right */
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transition: opacity 2s ease, transform 2s ease;
 }
 
 .animate {
