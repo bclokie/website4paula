@@ -1,33 +1,10 @@
 // TalksandWorkshops.js
 
-import React, { useState } from 'react';
+import React from 'react';
 import './TalksandWorkshops.css';
 
 const TalksandWorkshops = () => {
-  const [activeImageIndex1, setActiveImageIndex1] = useState(0);
-  const [activeImageIndex2, setActiveImageIndex2] = useState(0);
-  const [activeImageIndex3, setActiveImageIndex3] = useState(0);
-
-  const handleImageChange = (increment, section) => {
-    let newIndex;
-    switch (section) {
-      case 1:
-        newIndex = (activeImageIndex1 + increment + 5) % 5;
-        setActiveImageIndex1(newIndex);
-        break;
-      case 2:
-        newIndex = (activeImageIndex2 + increment + 3) % 3; // Adjust for 3 slides
-        setActiveImageIndex2(newIndex);
-        break;
-      case 3:
-        newIndex = (activeImageIndex3 + increment + 2) % 2; // Adjust for 2 slides
-        setActiveImageIndex3(newIndex);
-        break;
-      default:
-        break;
-    }
-  };
-
+  
   return (
     <div className="talks-workshops-container">
       <div className="work-title-container">
@@ -42,16 +19,9 @@ const TalksandWorkshops = () => {
           I have had the opportunity to present at many different academic conferences in my field. Below is a short list of key conferences I have presented at.
         </p>
         <div className="talks-workshops-images">
-          {/* Empty box for one image at a time */}
-          <div className="single-image-box">
-            <img src={`/S1.${activeImageIndex1 + 1}.png`} alt={`Conference ${activeImageIndex1 + 1}`} />
-            <div className="icon left" onClick={() => handleImageChange(-1, 1)}>
-              <i className="fas fa-chevron-left"></i>
-            </div>
-            <div className="icon right" onClick={() => handleImageChange(1, 1)}>
-              <i className="fas fa-chevron-right"></i>
-            </div>
-          </div>
+          {Array.from({ length: 5 }).map((_, index) => (
+            <img key={index} src={`/S1.${index + 1}.png`} alt={`Conference ${index + 1}`} />
+          ))}
         </div>
       </div>
 
@@ -62,16 +32,9 @@ const TalksandWorkshops = () => {
           I have had the opportunity to run several design workshops for organizations in need of expertise on co-design and designing behavior change interventions. Below are some of the organizations I have worked with to run these workshops.
         </p>
         <div className="talks-workshops-images">
-          {/* Empty box for one image at a time */}
-          <div className="single-image-box">
-            <img src={`/S2.${activeImageIndex2 + 1}.png`} alt={`Co-Design Workshop ${activeImageIndex2 + 1}`} />
-            <div className="icon left" onClick={() => handleImageChange(-1, 2)}>
-              <i className="fas fa-chevron-left"></i>
-            </div>
-            <div className="icon right" onClick={() => handleImageChange(1, 2)}>
-              <i className="fas fa-chevron-right"></i>
-            </div>
-          </div>
+          {Array.from({ length: 3 }).map((_, index) => (
+            <img key={index} src={`/S2.${index + 1}.png`} alt={`Co-Design Workshop ${index + 1}`} />
+          ))}
         </div>
       </div>
 

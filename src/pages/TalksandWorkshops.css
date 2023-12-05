@@ -39,17 +39,6 @@
   margin-bottom: 5px;
 }
 
-.single-image-box {
-  position: relative;
-  overflow: hidden;
-  margin: 10px auto;
-  max-width: 50vw;
-}
-
-.single-image-box img {
-  object-fit: cover;
-}
-
 .icon {
   position: absolute;
   top: 50%;
