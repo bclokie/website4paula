@@ -45,7 +45,7 @@ const TalksandWorkshops = () => {
           I am available to give presentations to companies and organizations who are interested in educating their staff on designing interventions using insights from behavioral science and design science. Below are some of the companies I have presented to.
         </p>
         {/* Images for Section 3 */}
-        <div className="image-row">
+        <div className="talks-workshops-images">
           {[...Array(2)].map((_, index) => (
             <img key={index} src={`/S3.${index + 1}.png`} alt={`Company Presentation ${index + 1}`} />
           ))}
@@ -59,7 +59,9 @@ const TalksandWorkshops = () => {
           My teaching has involved guest lecturing for several courses at the Institute of Health Policy, Management and Evaluation at the University of Toronto.
         </p>
         {/* Image for Section 4 */}
-        <img src="/S4.1.png" alt="Teaching" />
+        <div className="talks-workshops-images">
+          <img src="/S4.1.png" alt="Teaching" />
+        </div>
       </div>
     </div>
   );

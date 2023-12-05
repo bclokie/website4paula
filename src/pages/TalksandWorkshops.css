@@ -26,9 +26,9 @@
 }
 
 .talks-workshops-images img {
-  width: 30%;
-  height: fit-content;
-  object-fit: cover;
+  width: 30vw;
+  height: 30vh;
+  object-fit: contain;
   margin-right: 10px;
   margin-bottom: 10px;
   margin: 0 auto;
