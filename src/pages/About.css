@@ -88,8 +88,9 @@
   color: #555;
 }
 
+
 .my-work-button {
-  margin-top: 40px;
+  margin-top: 40px; /* Adjust this margin as needed outside the media query */
   display: block;
   width: fit-content;
   padding: 15px 30px;
@@ -99,7 +100,6 @@
   background-color: pink;
   border-radius: 25px;
   transition: background-color 0.3s ease-in-out;
-  position: absolute;
 }
 
 .my-work-button:hover {
@@ -109,7 +109,7 @@
 .education-intro {
   text-align: center;
   font-size: 1.5rem;
-  animation: fadeIn 3s ease-in-out;
+  animation: riseUp 3s ease-in-out;
 }
 
 @keyframes fadeIn {
@@ -190,6 +190,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
     flex-direction: column;
+    font-size: 25px;
   }
 
   .about-image {
@@ -207,7 +208,13 @@
 
   .my-work-button {
     margin-top: 10%; /* Adjusted margin */
-    font-size: 1rem;
-    margin: 0 auto;
+    font-size: 1.5rem;
+    margin-right: 50%;
+    width: 40vw;
+    text-align: center;
+  }
+
+  .education-intro {
+    margin-bottom: 25px;
   }
 }
