@@ -161,12 +161,12 @@
 
 .degree:nth-child(3) .degree-logo,
 .degree:nth-child(3) .degree-info {
-  transition-delay: 1s; /* Delay for the third item */
+  transition-delay: .3s; /* Delay for the third item */
 }
 
 .degree:nth-child(4) .degree-logo,
 .degree:nth-child(4) .degree-info {
-  transition-delay: 2s; /* Delay for the first item */
+  transition-delay: .6s; /* Delay for the first item */
 }
 
 .school-name {
