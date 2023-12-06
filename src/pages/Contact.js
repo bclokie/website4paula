@@ -45,6 +45,11 @@ const Contact = () => {
     }, 1); // Adjust the delay as needed
   };
 
+  const linkStyles = {
+    color: 'blue',
+    textDecoration: 'none',
+  };
+
   return (
     <div className="contact-page">
     <div className="contact-header">
@@ -124,11 +129,21 @@ const Contact = () => {
               position={{ lat: 43.65591, lng: -79.38924 }}
               onCloseClick={() => setShowInfoWindow(false)}
             >
-              <div style={{ maxWidth: '400px' }}>
+              <div style={{ maxWidth: '200px' }}>
                 <strong>Sinai Health Foundation</strong>
                 <br/>
                 <br/>
-                <p><a href="https://www.google.com/maps?ll=43.655978,-79.389878&z=18&t=m&hl=en-CA&gl=US&mapclient=apiv3&cid=15232092314054749765" target="_blank" rel="noopener noreferrer" style={{ color: 'blue' }}>View on Google Maps</a></p>
+                <p>
+                  <a href="https://www.google.com/maps?ll=43.655978,-79.389878&z=18&t=m&hl=en-CA&gl=US&mapclient=apiv3&cid=15232092314054749765" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={linkStyles}
+                    onMouseEnter={(e) => e.currentTarget.style.textDecoration = 'underline'}
+                    onMouseLeave={(e) => e.currentTarget.style.textDecoration = 'none'}
+                  >
+                    View on Google Maps
+                  </a>
+                </p>
               </div>
             </InfoWindow>
           )}
