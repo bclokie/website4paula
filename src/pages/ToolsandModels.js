@@ -1,10 +1,16 @@
 // ToolsAndMethods.js
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './ToolsandModels.css';
 
 const ToolsandModels = () => {
+  const [clickedImage, setClickedImage] = useState(null);
+  
+  const handleImageClick = (imageSrc) => {
+    setClickedImage(imageSrc);
+  };
+  
   return (
     <div className="tools-methods-container">
       <div className="work-title-container">
@@ -21,9 +27,9 @@ const ToolsandModels = () => {
           The tools below will help you navigate the BDT process.
         </p>
         <div className="work-items">
-          <div className="work-item">
-            <h3>Playbook</h3>
-            <img src="https://picsum.photos/200/200" alt="Playbook" />
+          <div className="work-item" onClick={() => handleImageClick("/TM1-1.png")}>
+           <h3>Playbook</h3>
+            <img src="/TM1-1.png" alt="Playbook" />
             <p>Behavioral Design Thinking</p>
           </div>
           <div className="work-item">
@@ -107,6 +113,13 @@ const ToolsandModels = () => {
       <Link to="/contact" className="updates-button">
         Contact Me!
       </Link>
+      
+      {/* Overlay for the clicked image */}
+      {clickedImage && (
+        <div className="overlay" onClick={() => setClickedImage(null)}>
+          <img src={clickedImage} alt="Expanded" className="expanded-image" />
+        </div>
+      )}
     </div>
   );
 };
