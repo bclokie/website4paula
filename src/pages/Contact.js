@@ -5,6 +5,8 @@ import './Contact.css';
 import gsap from 'gsap';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 
+const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
+
 const Contact = () => {
   useEffect(() => {
     const icons = document.querySelectorAll('.icon-wrapper');
@@ -31,8 +33,6 @@ const Contact = () => {
       });
     });
   }, []);
-
-  const apiKey = process.env.GOOGLE_MAPS_API_KEY;
 
   return (
     <div className="contact-page">
@@ -98,7 +98,8 @@ const Contact = () => {
         <LoadScript googleMapsApiKey={apiKey}>
           <GoogleMap
             center={{ lat: 43.660070, lng: -79.395769 }}
-            zoom={5}
+            zoom={16}
+            mapContainerStyle={{ width: '100%', height: '100%' }}
           >
             <Marker position={{ lat: 43.660070, lng: -79.395769 }} />
           </GoogleMap>
