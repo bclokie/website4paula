@@ -4,6 +4,8 @@ import { FaEnvelope, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import './Contact.css';
 import gsap from 'gsap';
 
+const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
+
 const Contact = () => { 
   useEffect(() => {
     const icons = document.querySelectorAll('.icon-wrapper');
@@ -92,7 +94,7 @@ const Contact = () => {
     </div>
     <h2 className= "FindMe">Where to Find Me 📍</h2>
     <img
-        src={`https://maps.googleapis.com/maps/api/staticmap?center=43.660070,-79.395769&zoom=16&size=600x300&markers=color:red%7Clabel:S%7C43.660070,-79.395769&key=YOUR_GOOGLE_MAPS_API_KEY`}
+        src={`https://maps.googleapis.com/maps/api/staticmap?center=43.660070,-79.395769&zoom=16&size=600x300&markers=color:red%7Clabel:S%7C43.660070,-79.395769&key=${apiKey}`}
         alt="Map"
         className="google-maps-image"
       />
