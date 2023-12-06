@@ -1,12 +1,11 @@
-// Contact.js
-import React, {useEffect} from 'react';
+//Contact.js
+import React, { useEffect } from 'react';
 import { FaEnvelope, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import './Contact.css';
 import gsap from 'gsap';
+import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 
-const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
-
-const Contact = () => { 
+const Contact = () => {
   useEffect(() => {
     const icons = document.querySelectorAll('.icon-wrapper');
 
@@ -31,7 +30,9 @@ const Contact = () => {
         gsap.set(hoverOverlay, { width: e.offsetX, height: e.offsetY });
       });
     });
-  }, []); 
+  }, []);
+
+  const apiKey = process.env.GOOGLE_MAPS_API_KEY;
 
   return (
     <div className="contact-page">
@@ -93,11 +94,16 @@ const Contact = () => {
       </div>
     </div>
     <h2 className= "FindMe">Where to Find Me 📍</h2>
-    <img
-        src={`https://maps.googleapis.com/maps/api/staticmap?center=43.660070,-79.395769&zoom=16&size=600x300&markers=color:red%7Clabel:S%7C43.660070,-79.395769&key=${apiKey}`}
-        alt="Map"
-        className="google-maps-image"
-      />
+    <div className="google-maps-container">
+        <LoadScript googleMapsApiKey={apiKey}>
+          <GoogleMap
+            center={{ lat: 43.660070, lng: -79.395769 }}
+            zoom={5}
+          >
+            <Marker position={{ lat: 43.660070, lng: -79.395769 }} />
+          </GoogleMap>
+        </LoadScript>
+      </div>
   </div>
   );
 };
