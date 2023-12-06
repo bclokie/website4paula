@@ -126,6 +126,7 @@ const Contact = () => {
         </form>
       </div>
     </div>
+    <h2 className= "FindMe">Where to Find Me 📍</h2>
     <div id="map" className="leaflet-map"></div>
   </div>
   );
