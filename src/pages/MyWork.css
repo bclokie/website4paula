@@ -16,6 +16,7 @@ body, html {
   height: 90vh;
   background-attachment: fixed;
   animation: riseUp 1s ease-out; /* Apply the translateY animation */
+  margin-bottom: 50px;
 }
 
 /* Add keyframes for the grow animation */
@@ -110,10 +111,9 @@ body, html {
 }
 
 .updates-button {
-  margin-top: auto; /* Remove the margin-top property */
+  margin: 0 auto; 
   display: block; /* Change to block to take full width */
   width: fit-content; /* Adjust width based on content */
-  margin: 0 auto; /* Center the button horizontally */
   padding: 15px 30px;
   font-size: 24px;
   text-decoration: none;
