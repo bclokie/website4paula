@@ -155,8 +155,8 @@ body, html {
 }
 
 .google-maps-container {
-  width: 90%;
-  height: 400px; /* Set the desired height for your map */
+  width: 90vw;
+  height: 60vh; /* Set the desired height for your map */
   border: 2px solid purple;
   margin: 20px auto;
 }

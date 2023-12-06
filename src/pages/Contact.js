@@ -1,5 +1,4 @@
-//Contact.js
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaEnvelope, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import './Contact.css';
 import gsap from 'gsap';
@@ -8,6 +7,9 @@ import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
 
 const Contact = () => {
+  const [isMapLoaded, setIsMapLoaded] = useState(false);
+  const [showMarker, setShowMarker] = useState(false);
+
   useEffect(() => {
     const icons = document.querySelectorAll('.icon-wrapper');
 
@@ -33,6 +35,13 @@ const Contact = () => {
       });
     });
   }, []);
+
+  const handleMapLoad = () => {
+    setIsMapLoaded(true);
+    setTimeout(() => {
+      setShowMarker(true);
+    }, 1000); // Adjust the delay as needed
+  };
 
   return (
     <div className="contact-page">
@@ -94,19 +103,22 @@ const Contact = () => {
       </div>
     </div>
     <h2 className= "FindMe">Where to Find Me 📍</h2>
-    <div className="google-maps-container">
-        <LoadScript googleMapsApiKey={apiKey}>
-          <GoogleMap
-            center={{ lat: 43.660070, lng: -79.395769 }}
+      <div className="google-maps-container">
+      <LoadScript googleMapsApiKey={apiKey}>
+        <GoogleMap
+            center={{ lat: 43.66007, lng: -79.39576 }}
             zoom={16}
             mapContainerStyle={{ width: '100%', height: '100%' }}
+            onLoad={handleMapLoad}
           >
-            <Marker position={{ lat: 43.660070, lng: -79.395769 }} />
+            {isMapLoaded && showMarker && (
+              <Marker position={{ lat: 43.66007, lng: -79.39576 }} />
+            )}
           </GoogleMap>
         </LoadScript>
-      </div>
+    </div>
   </div>
   );
-};
+}
 
 export default Contact;
