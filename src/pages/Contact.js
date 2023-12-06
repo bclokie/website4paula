@@ -82,6 +82,13 @@ const Contact = () => {
           <p>paulavoorheis@gmail.com</p>
         </a>
 
+        <a href="mailto:paula.voorheis@mail.utoronto.ca" className="contact-section">
+          <div className="icon-wrapper">
+            <FaEnvelope className="icon" />
+          </div>
+          <p>paula.voorheis@mail.utoronto.ca</p>
+        </a>
+
         <a href="https://www.linkedin.com/in/paula-voorheis-phd-14415b11a/" target="_blank" rel="noopener noreferrer" className="contact-section">
           <div className="icon-wrapper">
             <FaLinkedin className="icon" />
