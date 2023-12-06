@@ -41,6 +41,7 @@ const Contact = () => {
     setIsMapLoaded(true);
     setTimeout(() => {
       setShowMarker(true);
+      setShowInfoWindow(true);
     }, 1); // Adjust the delay as needed
   };
 
@@ -123,8 +124,11 @@ const Contact = () => {
               position={{ lat: 43.65591, lng: -79.38924 }}
               onCloseClick={() => setShowInfoWindow(false)}
             >
-              <div>
-                <strong>Sinai Health, Toronto</strong>
+              <div style={{ maxWidth: '400px' }}>
+                <strong>Sinai Health Foundation</strong>
+                <br/>
+                <br/>
+                <p><a href="https://www.google.com/maps?ll=43.655978,-79.389878&z=18&t=m&hl=en-CA&gl=US&mapclient=apiv3&cid=15232092314054749765" target="_blank" rel="noopener noreferrer" style={{ color: 'blue' }}>View on Google Maps</a></p>
               </div>
             </InfoWindow>
           )}
