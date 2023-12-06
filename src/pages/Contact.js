@@ -1,47 +1,14 @@
-// Contact.js
-import React, {useEffect} from 'react';
+//Contact.js
+import React, { useEffect } from 'react';
 import { FaEnvelope, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import './Contact.css';
-import L from 'leaflet';
-import 'leaflet/dist/leaflet.css';
 import gsap from 'gsap';
+import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+
+const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
 
 const Contact = () => {
   useEffect(() => {
-    // Dynamically insert the Leaflet CSS
-    const link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = 'https://unpkg.com/leaflet/dist/leaflet.css';
-    document.head.appendChild(link);
-
-    // Dynamically insert the Leaflet script
-    const script = document.createElement('script');
-    script.src = 'https://unpkg.com/leaflet/dist/leaflet.js';
-    script.defer = true;
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      // Cleanup to remove the Leaflet CSS when the component is unmounted
-      document.head.removeChild(link);
-    };
-  }, []);
-
-  useEffect(() => {
-    // Initialize the map only if the map container is present
-    const mapContainer = document.getElementById('map');
-    if (mapContainer && !mapContainer._leaflet_id) {
-      const map = L.map(mapContainer).setView([43.660070, -79.395769], 16); // Coordinates for 600 University Avenue, Toronto
-
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '© OpenStreetMap contributors',
-      }).addTo(map);
-
-      // Add a marker for the specified location
-      L.marker([43.660070, -79.395769]).addTo(map)
-        .bindPopup('Sinai Health, Toronto')
-        .openPopup();
-    }
     const icons = document.querySelectorAll('.icon-wrapper');
 
     gsap.set(icons, { scale: 1 }); // Set initial scale
@@ -127,7 +94,17 @@ const Contact = () => {
       </div>
     </div>
     <h2 className= "FindMe">Where to Find Me 📍</h2>
-    <div id="map" className="leaflet-map"></div>
+    <div className="google-maps-container">
+        <LoadScript googleMapsApiKey={apiKey}>
+          <GoogleMap
+            center={{ lat: 43.660070, lng: -79.395769 }}
+            zoom={16}
+            mapContainerStyle={{ width: '100%', height: '100%' }}
+          >
+            <Marker position={{ lat: 43.660070, lng: -79.395769 }} />
+          </GoogleMap>
+        </LoadScript>
+      </div>
   </div>
   );
 };

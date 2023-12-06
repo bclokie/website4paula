@@ -154,7 +154,7 @@ body, html {
   background-color: #ff66b2;
 }
 
-.leaflet-map {
+.google-maps-container {
   width: 90%;
   height: 400px; /* Set the desired height for your map */
   border: 2px solid purple;
@@ -233,4 +233,3 @@ body, html {
     margin: 10px auto;
   }
 }
-
