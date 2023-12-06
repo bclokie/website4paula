@@ -32,12 +32,12 @@ const ToolsandModels = () => {
             <img src="/TM1-1.png" alt="Playbook" />
             <p>Behavioral Design Thinking</p>
           </div>
-          <div className="work-item">
+          <div className="work-item" onClick={() => handleImageClick("/TM1-2.png")}>
             <h3>Model</h3>
             <img src="/TM1-2.png" alt="Model" />
             <p>Design Methods for “Effectively Engaging” Digital Health Interventions</p>
           </div>
-          <div className="work-item">
+          <div className="work-item" onClick={() => handleImageClick("/TM1-3.png")}>
             <h3>Insights</h3>
             <img src="/TM1-3.png" alt="Insights" />
             <p>Behavioral Design Thinking Considerations and Challenges</p>
@@ -54,17 +54,17 @@ const ToolsandModels = () => {
           will help you select the best theories, models, and frameworks for your work.
         </p>
         <div className="work-items">
-          <div className="work-item">
+          <div className="work-item" onClick={() => handleImageClick("/TM2-1.png")}>
             <h3>Toolkit</h3>
             <img src="/TM2-1.png" alt="Toolkit" />
             <p>Types of Behavioral Design Tools</p>
           </div>
-          <div className="work-item">
+          <div className="work-item" onClick={() => handleImageClick("/TM2-2.png")}>
             <h3>Guidance</h3>
             <img src="/TM2-2.png" alt="Guidance" />
             <p>How to Select Behavioral Design Tools</p>
           </div>
-          <div className="work-item">
+          <div className="work-item" onClick={() => handleImageClick("/TM2-3.png")}>
             <h3>Recommendations</h3>
             <img src="/TM2-3.png" alt="Recommendations" />
             <p>How to Improve Behavioral Design Tools</p>
@@ -81,12 +81,12 @@ const ToolsandModels = () => {
           to maximize the value of co-design.
         </p>
         <div className="work-items">
-          <div className="work-item">
+          <div className="work-item" onClick={() => handleImageClick("/TM3-1.png")}>
             <h3>Playbook</h3>
             <img src="/TM3-1.png" alt="Playbook" />
             <p>Co-Design Process for Maximal Value</p>
           </div>
-          <div className="work-item">
+          <div className="work-item" onClick={() => handleImageClick("/TM3-2.png")}>
             <h3>Insights</h3>
             <img src="/TM3-2.png" alt="Insights" />
             <p>How Co-Design Adds Value</p>
@@ -102,7 +102,7 @@ const ToolsandModels = () => {
           behavioural science lens. The tools below offer guidance on how to conduct a SBA.
         </p>
         <div className="work-items">
-          <div className="work-item">
+          <div className="work-item" onClick={() => handleImageClick("/TM4-1.png")}>
             <h3>Playbook</h3>
             <img src="/TM4-1.png" alt="Playbook" />
             <p>Strategic Behavioural Analysis</p>
