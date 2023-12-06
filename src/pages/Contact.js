@@ -2,13 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { FaEnvelope, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import './Contact.css';
 import gsap from 'gsap';
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+import { GoogleMap, LoadScript, Marker, InfoWindow } from '@react-google-maps/api';
 
 const apiKey = process.env.REACT_APP_GOOGLE_MAPS_API_KEY;
 
 const Contact = () => {
   const [isMapLoaded, setIsMapLoaded] = useState(false);
   const [showMarker, setShowMarker] = useState(false);
+  const [showInfoWindow, setShowInfoWindow] = useState(false);
 
   useEffect(() => {
     const icons = document.querySelectorAll('.icon-wrapper');
@@ -40,7 +41,7 @@ const Contact = () => {
     setIsMapLoaded(true);
     setTimeout(() => {
       setShowMarker(true);
-    }, 1000); // Adjust the delay as needed
+    }, 1); // Adjust the delay as needed
   };
 
   return (
@@ -105,17 +106,32 @@ const Contact = () => {
     <h2 className= "FindMe">Where to Find Me 📍</h2>
       <div className="google-maps-container">
       <LoadScript googleMapsApiKey={apiKey}>
-        <GoogleMap
-            center={{ lat: 43.66007, lng: -79.39576 }}
-            zoom={16}
-            mapContainerStyle={{ width: '100%', height: '100%' }}
-            onLoad={handleMapLoad}
-          >
-            {isMapLoaded && showMarker && (
-              <Marker position={{ lat: 43.66007, lng: -79.39576 }} />
-            )}
-          </GoogleMap>
-        </LoadScript>
+      <GoogleMap
+        center={{ lat: 43.65591, lng: -79.38924 }}
+        zoom={16}
+        mapContainerStyle={{ width: '100%', height: '100%' }}
+        onLoad={handleMapLoad}
+       >
+        {isMapLoaded && showMarker && (
+        <>
+          <Marker
+            position={{ lat: 43.65591, lng: -79.38924 }} 
+            onClick={() => setShowInfoWindow(!showInfoWindow)}
+          />
+          {showInfoWindow && (
+            <InfoWindow
+              position={{ lat: 43.65591, lng: -79.38924 }}
+              onCloseClick={() => setShowInfoWindow(false)}
+            >
+              <div>
+                <strong>Sinai Health, Toronto</strong>
+              </div>
+            </InfoWindow>
+          )}
+        </>
+      )}
+    </GoogleMap>
+      </LoadScript>
     </div>
   </div>
   );
