@@ -42,7 +42,7 @@ const Contact = () => {
     setTimeout(() => {
       setShowMarker(true);
       setShowInfoWindow(true);
-    }, 1); // Adjust the delay as needed
+    }, 1); // Without this setTimeout delay the marker doesn't show up
   };
 
   const linkStyles = {
@@ -142,6 +142,18 @@ const Contact = () => {
                     onMouseLeave={(e) => e.currentTarget.style.textDecoration = 'none'}
                   >
                     View on Google Maps
+                  </a>
+                </p>
+                <br/>
+                <p>
+                  <a href="https://maps.apple.com/?ll=43.655995,-79.389346&q=Dropped%20Pin&t=m" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={linkStyles}
+                    onMouseEnter={(e) => e.currentTarget.style.textDecoration = 'underline'}
+                    onMouseLeave={(e) => e.currentTarget.style.textDecoration = 'none'}
+                  >
+                    View on Apple Maps
                   </a>
                 </p>
               </div>
