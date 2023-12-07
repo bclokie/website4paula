@@ -63,6 +63,25 @@ const TalksandWorkshops = () => {
           <img src="/S4.1.png" alt="Teaching" />
         </div>
       </div>
+
+      {/* Section 5: Coaching */}
+      <div className="talks-workshops-section">
+        <h2>Coaching and Consulting</h2>
+        <p>
+          Currently, I am working with VeroSource Solutions to help them evaluate and enhance a digital
+          health solution they made for the New Brunswick Department of Health, “MyHealthNB”.
+          MyHealthNB is a province wide PHR application that provides citizens access to their health
+          information online, including lab results, medication history, immunization records, imaging
+          reports, and healthcare encounters. Evaluating MyHealthNB will help VeroSource Solutions and
+          the New Brunswick Department of Health understand the impact MyHealthNB is having on
+          New Brunswickers, and will also help them inform future improvements to MyHealthNB’s
+          design and implementation.        
+        </p>
+        {/* Image for Section 4 */}
+        <div className="talks-workshops-images">
+          <img src="/MyHealthNB.png" alt="Teaching" />
+        </div>
+      </div>
     </div>
   );
 };
