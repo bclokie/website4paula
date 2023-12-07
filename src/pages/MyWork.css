@@ -1,7 +1,7 @@
 /* MyWork.css */
 
 body, html {
-  min-height: 100vh;
+  min-height: 90vh;
   margin: 0;
   padding: 0;
 }
@@ -13,7 +13,7 @@ body, html {
   justify-content: flex-start;
   padding: 20px;
   text-align: center;
-  height: 90vh;
+  height: 92vh;
   background-attachment: fixed;
   animation: riseUp 1s ease-out; /* Apply the translateY animation */
   margin-bottom: 50px;
@@ -102,12 +102,12 @@ body, html {
 .work-item h3 {
   font-weight: bold;
   font-size: 20px;
-  margin-bottom: 10px;
 }
 
 .work-item p {
   font-size: 16px;
   color: #555;
+  margin-bottom: 10px;
 }
 
 .updates-button {

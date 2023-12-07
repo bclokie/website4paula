@@ -132,7 +132,6 @@ const Contact = () => {
               <div style={{ maxWidth: '200px' }}>
                 <strong>Sinai Health Foundation</strong>
                 <br/>
-                <br/>
                 <p>
                   <a href="https://www.google.com/maps?ll=43.655978,-79.389878&z=18&t=m&hl=en-CA&gl=US&mapclient=apiv3&cid=15232092314054749765" 
                     target="_blank"
@@ -144,7 +143,6 @@ const Contact = () => {
                     View on Google Maps
                   </a>
                 </p>
-                <br/>
                 <p>
                   <a href="https://maps.apple.com/?ll=43.655995,-79.389346&q=Dropped%20Pin&t=m" 
                     target="_blank"
