@@ -10,12 +10,28 @@
 .talks-workshops-section {
   margin-bottom: 20px;
   margin-top: 20px;
+  border: 2px solid pink;
+  border-radius: 5px;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+p {
+  margin-top: 30px;
 }
 
 .talks-workshops-images {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 40px auto; 
+}
+
+.teaching-image {
+  margin: 20px auto;
+  width: 50vw;  
 }
 
 .image-row {

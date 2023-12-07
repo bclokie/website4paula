@@ -59,7 +59,7 @@ const TalksandWorkshops = () => {
           My teaching has involved guest lecturing for several courses at the Institute of Health Policy, Management and Evaluation at the University of Toronto.
         </p>
         {/* Image for Section 4 */}
-        <div className="talks-workshops-images">
+        <div className="teaching-image">
           <img src="/S4.1.png" alt="Teaching" />
         </div>
       </div>
