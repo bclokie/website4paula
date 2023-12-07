@@ -95,7 +95,7 @@ const Contact = () => {
       </div>
 
       <div className="contact-form">
-        <h2>Send Me a Message ☺️</h2>
+        <h2>Send Me a Message 🙂</h2>
         <form>
           <div className="name-email-container">
             <input type="text" id="name" name="name" placeholder="Your Name" required />
