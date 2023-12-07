@@ -46,6 +46,11 @@
   border-radius: 1px;
 }
 
+/* .section-container {
+  border: 1px solid #555;
+  margin: 2vh auto;
+} */
+
 .section-title {
   font-size: 24px;
   font-weight: bold;
