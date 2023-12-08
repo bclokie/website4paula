@@ -16,10 +16,9 @@ body {
 }
 
 .logo {
-  font-size: 2rem;
-  font-weight: bold;
-  text-decoration: none;
-  color: black;
+  max-height: 8vh;
+  max-width: 8vw;
+  margin-left: 20px;
 }
 
 .menu-icon {
