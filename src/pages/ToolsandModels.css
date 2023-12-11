@@ -1,6 +1,6 @@
 /* ToolsandModels.css */
 
-.tools-methods-container {
+.tools-models-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,7 +12,7 @@
   animation: tools-riseUp 1s ease-out;
 }
 
-.tools-methods-work-items {
+.tools-models-work-items {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -21,20 +21,22 @@
   animation: tools-grow 1s ease-out;
 }
 
-.tools-methods-work-item {
+.tools-models-work-item {
   margin-bottom: 20px;
   width: calc(30% - 20px); /* Adjust width based on the number of items in a row */
+  border: 1px solid black;
+
 }
 
-.tools-methods-work-item:hover {
+.tools-models-work-item:hover {
   cursor: pointer;
 }
 
-.tools-methods-header-line {
+.tools-models-header-line {
   width: 100px;
 }
 
-.tools-methods-header-line::after {
+.tools-models-header-line::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -46,7 +48,7 @@
   border-radius: 1px;
 }
 
-.tools-methods-section-title {
+.tools-models-section-title {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -54,7 +56,7 @@
   text-align: center;
 }
 
-.tools-methods-section-subtitle {
+.tools-models-section-subtitle {
   font-size: 18px;
   color: #555;
   animation: tools-riseUp 1s ease-out;
@@ -62,7 +64,7 @@
   margin: auto;
 }
 
-.tools-methods-overlay {
+.tools-models-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -76,7 +78,7 @@
   overflow: hidden;
 }
 
-.tools-methods-expanded-image {
+.tools-models-expanded-image {
   max-width: 100%;
   max-height: 100vh;
   cursor: pointer;
@@ -84,22 +86,22 @@
 
 /* Media Query for Portrait Mode */
 @media screen and (orientation: portrait) {
-  .tools-methods-work-items {
+  .tools-models-work-items {
     margin: 20px auto;
     position: relative;
     flex-direction: column;
   }
   
-  .tools-methods-work-item {
+  .tools-models-work-item {
     margin-bottom: 20px;
     width: 100%; /* Take full width in portrait mode */
   }
 
-  .tools-methods-section-title {
+  .tools-models-section-title {
     margin-top: 5%;
   }
 
-  .tools-methods-section-subtitle {
+  .tools-models-section-subtitle {
     width: 100%;
   }
 }
