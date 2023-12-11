@@ -87,7 +87,6 @@ body, html {
   background-color: white;
   animation: my-work-grow 1s ease-out; /* Apply the grow animation */
   overflow: hidden;
-  width: 10px;
 }
 
 .my-work-item img {
@@ -133,6 +132,7 @@ body, html {
 
   .my-work-item {
     margin-bottom: 20px;
+    width: 80vw;
   }
 
   .my-work-header-line {
