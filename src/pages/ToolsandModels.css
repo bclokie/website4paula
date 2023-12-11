@@ -32,6 +32,22 @@
   cursor: pointer;
 }
 
+.tools-models-work-item img {
+  margin-bottom: 0 auto;
+}
+
+.tools-models-work-item h3 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 1vh;
+}
+
+.tools-models-work-item p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
 .tools-models-header-line {
   width: 100px;
 }
