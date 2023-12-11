@@ -1,4 +1,4 @@
-/* ToolsandMethods.css */
+/* ToolsandModels.css */
 
 .tools-methods-container {
   display: flex;
@@ -9,32 +9,32 @@
   text-align: center;
   height: 90vh;
   background-attachment: fixed;
-  animation: riseUp 1s ease-out;
+  animation: tools-riseUp 1s ease-out;
 }
 
-.work-items {
+.tools-methods-work-items {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 50px;
   margin-bottom: 30px;
-  animation: grow 1s ease-out;
+  animation: tools-grow 1s ease-out;
 }
 
-.work-item {
+.tools-methods-work-item {
   margin-bottom: 20px;
   width: calc(30% - 20px); /* Adjust width based on the number of items in a row */
 }
 
-.work-item:hover {
+.tools-methods-work-item:hover {
   cursor: pointer;
 }
 
-.header-line {
+.tools-methods-header-line {
   width: 100px;
 }
 
-.header-line::after {
+.tools-methods-header-line::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -46,12 +46,7 @@
   border-radius: 1px;
 }
 
-/* .section-container {
-  border: 1px solid #555;
-  margin: 2vh auto;
-} */
-
-.section-title {
+.tools-methods-section-title {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -59,15 +54,15 @@
   text-align: center;
 }
 
-.section-subtitle {
+.tools-methods-section-subtitle {
   font-size: 18px;
   color: #555;
-  animation: riseUp 1s ease-out;
+  animation: tools-riseUp 1s ease-out;
   width: 80%;
   margin: auto;
 }
 
-.overlay {
+.tools-methods-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -81,7 +76,7 @@
   overflow: hidden;
 }
 
-.expanded-image {
+.tools-methods-expanded-image {
   max-width: 100%;
   max-height: 100vh;
   cursor: pointer;
@@ -89,22 +84,22 @@
 
 /* Media Query for Portrait Mode */
 @media screen and (orientation: portrait) {
-  .work-items {
+  .tools-methods-work-items {
     margin: 20px auto;
     position: relative;
     flex-direction: column;
   }
   
-  .work-item {
+  .tools-methods-work-item {
     margin-bottom: 20px;
     width: 100%; /* Take full width in portrait mode */
   }
 
-  .section-title {
+  .tools-methods-section-title {
     margin-top: 5%;
   }
 
-  .section-subtitle {
+  .tools-methods-section-subtitle {
     width: 100%;
   }
 }
@@ -116,6 +111,17 @@
   }
   to {
     transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes tools-grow {
+  from {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleX(1);
     opacity: 1;
   }
 }
