@@ -28,7 +28,7 @@ const About = () => {
   return (
     <div>
       <div className="about-container">
-        <div className="about-header">
+        <div className="page-header">
           <h2>About Me</h2>
           <div className="header-line"></div>
         </div>
