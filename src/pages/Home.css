@@ -3,6 +3,9 @@ body, html {
   min-height: 100vh;
   margin: 0;
   padding: 0;
+  background-color: #8e44ad;
+  background: linear-gradient(to right, #8e44ad, #341f97);
+  color: white;
 }
 
 .home-container {

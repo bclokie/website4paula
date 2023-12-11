@@ -32,9 +32,9 @@ body, html {
 }
 
 .header-line {
-  width: 5%;
+  width: 100px;
   height: 4px;
-  background-color: purple;
+  background-color: pink;
   margin: 0 auto;
   border-radius: 1px;
 }

@@ -48,7 +48,6 @@
   font-size: 36px;
   margin-bottom: 10px; /* Match the margin-bottom of the MyWork header */
   padding: 10px 20px;
-  background-color: white;
 }
 
 .about-header .header-line::after {
