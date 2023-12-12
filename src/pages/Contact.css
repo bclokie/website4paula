@@ -156,9 +156,10 @@ body, html {
 
 .google-maps-container {
   width: 90vw;
-  height: 60vh; /* Set the desired height for your map */
+  height: 60vh; 
   border: 2px solid purple;
   margin: 20px auto;
+  color: black;
 }
 
 .FindMe {
