@@ -72,12 +72,15 @@ body, html {
   height: 40px;
   border-radius: 50%;
   background-color: lightpink;
-  border: 2px solid purple;
+  /* border: 2px solid purple; */
   margin-right: 10px;
 }
 
 .icon-wrapper:hover {
   background-color: #ff66b2;
+  border-radius: 30%;
+  transition: border-radius 0.3s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .icon {
@@ -179,12 +182,12 @@ body, html {
 
   .contact-links {
     align-items: left;
-    margin-top: 20px;
+    margin-top: 0px;
     margin: 0 auto;
   }
 
   .contact-form {
-    width: 90%;
+    width: 95%;
     margin: 20px auto;
   }
 

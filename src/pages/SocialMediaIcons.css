@@ -16,7 +16,8 @@
 }
 
 .social-icons i:hover {
-  color: purple;
+  color: rebeccapurple;
+  transition: color 0.3s ease, transform 0.3s ease;
   transform: scale(1.3)
 }
 
