@@ -58,7 +58,7 @@
   transform: translateX(-50%);
   width: 100px;
   height: 4px;
-  background-color: purple;
+  background-color: pink;
   border-radius: 1px;
 }
 
@@ -98,11 +98,12 @@
   color: black;
   background-color: pink;
   border-radius: 25px;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, scale 0.3s ease-in-out;
 }
 
 .my-work-button:hover {
   background-color: #ff66b2; /* Darker pink on hover */
+  scale: 1.05;
 }
 
 .education-intro {
@@ -209,7 +210,7 @@
     margin-top: 10%; /* Adjusted margin */
     font-size: 1.5rem;
     margin-right: 50%;
-    width: 40vw;
+    width: 60vw;
     text-align: center;
   }
 
