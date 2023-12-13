@@ -74,13 +74,13 @@ body, html {
   background-color: lightpink;
   /* border: 2px solid purple; */
   margin-right: 10px;
+  transition: border-radius 0.3s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .icon-wrapper:hover {
   background-color: #ff66b2;
   border-radius: 30%;
-  transition: border-radius 0.3s ease-in-out;
-  transition: background-color 0.2s ease-in-out;
 }
 
 .icon {
