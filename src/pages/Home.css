@@ -34,12 +34,12 @@ body, html {
   font-weight: bold;
   font-size: 72px;
   text-align: center;
-  color: black;
+  color: white;
 }
 
 .header p {
   font-size: 40px;
-  color: black;
+  color: white;
   text-align: center;
   margin-top: 5%;
 }
