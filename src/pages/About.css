@@ -124,7 +124,7 @@
 .degree {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   opacity: 0; /* Initial opacity set to 0 */
 }
 
@@ -162,6 +162,7 @@
 .degree:nth-child(3) .degree-logo,
 .degree:nth-child(3) .degree-info {
   transition-delay: .3s; /* Delay for the third item */
+  margin-bottom: 10px;
 }
 
 .degree:nth-child(4) .degree-logo,
@@ -176,12 +177,12 @@
 
 .degree-name {
   font-size: 20px;
-  margin-bottom: 5px;
+  margin-bottom: -20px;
 }
 
 .degree-description {
   font-size: 16px;
-  margin-left: 20px;
+  margin-left: 0px;
   color: white;
 }
 
@@ -220,5 +221,26 @@
 
   .degree {
     margin-bottom: 70px;
+  }
+
+  .degree-logo {
+    max-width: 24vw;
+  }
+
+  .school-name {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .degree-name {
+    font-size: 17px;
+    margin-bottom: -20px;
+  }
+  
+  .degree-description {
+    font-size: 14px;
+    margin-left: 0px;
+    color: white;
   }
 }
