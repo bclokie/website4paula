@@ -142,6 +142,8 @@
   max-width: 150px;
   margin-right: 40px;
   transform: translateX(-100%); /* Initial position off-screen to the left */
+  background-color: rgb(255,255,255,0.7);
+  border-radius: 10%;
 }
 
 .degree-info {
@@ -221,26 +223,33 @@
 
   .degree {
     margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
   }
 
   .degree-logo {
-    max-width: 24vw;
+    max-width: 30vw;
+    margin: 0 auto;
+    order: 0;
   }
 
   .school-name {
     font-size: 20px;
     margin-bottom: 10px;
     text-align: center;
+
   }
   
   .degree-name {
     font-size: 17px;
     margin-bottom: -20px;
+
   }
   
   .degree-description {
     font-size: 14px;
     margin-left: 0px;
     color: white;
+
   }
 }
