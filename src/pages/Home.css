@@ -78,24 +78,26 @@ body, html {
 
   .home-image {
     order: 1;
-    max-width: 30%;
+    max-width: 40%;
     animation: riseUp 1s ease-out;
     margin-top: 5%;
   }
 
   .header h1 {
-    font-size: 1.5rem; 
+    font-size: 2rem; 
     max-width: 100%;
+    color: white;
   }
 
   .header p {
-    font-size: 1rem; 
+    font-size: 1.5rem; 
+    color: white;
   }
 
   .about-button {
     order: 2;
     margin-top: 1.5rem; 
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
 }
 
