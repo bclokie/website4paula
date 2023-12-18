@@ -50,20 +50,22 @@
 
 }
 
-.tools-models-header-line {
-  width: 100px;
+.tools-models-title {
+  font-size: 36px;
+  margin-bottom: 10px; 
+  padding: 10px 20px;
 }
 
-.tools-models-header-line::after {
+.tools-models-header-line {
   content: "";
-  position: absolute;
+  position: relative;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: calc(5vw);
   height: 4px;
-  background-color: purple;
+  background-color: pink;
   border-radius: 1px;
+  width: 100px;
 }
 
 .tools-models-section-title {
