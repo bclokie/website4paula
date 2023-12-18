@@ -2,6 +2,7 @@
 
 import React from 'react';
 import './TalksandWorkshops.css';
+import { Link } from 'react-router-dom';
 
 const TalksandWorkshops = () => {
   
@@ -82,6 +83,11 @@ const TalksandWorkshops = () => {
           <img src="/MyHealthNB.png" alt="Teaching" />
         </div>
       </div>
+      <div className="button">
+          <Link to="/contact" className="contact-button">
+            Contact Me!
+          </Link>
+        </div>
     </div>
   );
 };

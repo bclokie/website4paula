@@ -72,5 +72,14 @@ p {
   right: 5px;;
 }
 
+.contact-button {
+  transition: background-color 0.3s ease-in-out, scale 0.3s ease-in-out;
+}
+
+.contact-button:hover {
+  background-color: #ff66b2;
+  scale: 1.05;
+}
+
 
 
