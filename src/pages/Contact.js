@@ -117,6 +117,7 @@ const Contact = () => {
         zoom={16}
         mapContainerStyle={{ width: '100%', height: '100%' }}
         onLoad={handleMapLoad}
+        disableDefaultUI={true}
        >
         {isMapLoaded && showMarker && (
         <>
@@ -130,9 +131,8 @@ const Contact = () => {
               onCloseClick={() => setShowInfoWindow(false)}
             >
               <div style={{ maxWidth: '200px' }}>
-                <strong>Sinai Health Foundation</strong>
-                <br/>
-                <p>
+                <p><strong>Sinai Health Foundation</strong> <br/> <br/>
+                 1001-522 University Ave. <br/> <br/>
                   <a href="https://www.google.com/maps?ll=43.655978,-79.389878&z=18&t=m&hl=en-CA&gl=US&mapclient=apiv3&cid=15232092314054749765" 
                     target="_blank"
                     rel="noopener noreferrer"
@@ -142,8 +142,8 @@ const Contact = () => {
                   >
                     View on Google Maps
                   </a>
-                </p>
-                <p>
+                  <br/>
+                  <br/>
                   <a href="https://maps.apple.com/?ll=43.655995,-79.389346&q=Dropped%20Pin&t=m" 
                     target="_blank"
                     rel="noopener noreferrer"
