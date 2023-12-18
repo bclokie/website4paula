@@ -6,6 +6,15 @@
   padding: 20px;
 }
 
+.work-title {
+  font-size: 36px;
+  padding: 10px 20px;
+}
+
+.header-line {
+  position: relative;
+}
+
 .works-title {
   font-size: 24px;
   font-weight: bold;
@@ -38,6 +47,8 @@
   color: lightblue;
   text-decoration: none;
   font-weight: bold;
+  margin-left: 44vw;
+  margin-right: 44vw;
 }
 
 @keyframes riseUp {
@@ -66,4 +77,25 @@
 
 .blue-link:visited {
   color: lightpink; /* Change the color for visited links */
+}
+
+@media screen and (orientation: portrait) {
+  .published-works-container {
+    margin: 20px auto;
+  }
+
+  .publication a {
+    margin: 0 auto;
+    font-size: larger;
+    margin-top: 20px;
+  }
+
+  p.subtitle {
+    font-size: 20px;
+  }
+
+  .subtitle a {
+    font-size: 20px;
+  }
+  
 }

@@ -2,6 +2,7 @@
 
 import React from 'react';
 import './Publications.css';
+import { Link } from 'react-router-dom';
 
 const Publications = () => {
   const publications = [
@@ -107,6 +108,14 @@ const Publications = () => {
           </li>
         ))}
       </ul>
+      <div className="button">
+        <Link to="/talks+workshops" className="my-work-button">
+          Talks & Workshops
+        </Link>
+      </div>
+      <div className="blank">
+        <p>----------------------------------</p>
+      </div>
     </div>
   );
 };
