@@ -16,7 +16,7 @@
 }
 
 .social-icons i:hover {
-  color: rgb(19, 9, 224);
+  color: rgb(128, 0, 255);
   transition: color 0.3s ease, transform 0.3s ease;
   transform: scale(1.3)
 }
