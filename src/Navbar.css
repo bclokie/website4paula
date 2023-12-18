@@ -15,9 +15,14 @@ body {
 }
 
 .logo {
-  max-height: 8vh;
-  max-width: 8vw;
+  width: 120px;
   margin-left: 20px;
+  transition: scale 0.3s ease-in-out;
+}
+
+.logo:hover {
+  cursor: pointer;
+  scale: 1.05;
 }
 
 .menu-icon {
