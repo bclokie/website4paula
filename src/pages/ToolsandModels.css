@@ -25,7 +25,7 @@
   margin-bottom: 20px;
   width: calc(30% - 20px); /* Adjust width based on the number of items in a row */
   border: 1px solid black;
-  background-color: plum;
+  background-color: lightgray;
 }
 
 .tools-models-work-item:hover {
@@ -33,19 +33,21 @@
 }
 
 .tools-models-work-item img {
-  margin-bottom: 0 auto;
+  border: 1px solid black;
 }
 
 .tools-models-work-item h3 {
   font-weight: bold;
   font-size: 20px;
-  margin-bottom: 1vh;
+  margin: 1vh auto;
+  color: black;
 }
 
 .tools-models-work-item p {
   font-size: 18px;
-  color: #555;
+  color: black;
   margin-bottom: 10px;
+
 }
 
 .tools-models-header-line {
