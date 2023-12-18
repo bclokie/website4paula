@@ -78,7 +78,6 @@
 .about-text {
   flex: 2; /* Allow the text to take up available space */
   max-width: 600px;
-  margin-top: 50px;
 }
 
 .about-text p {
