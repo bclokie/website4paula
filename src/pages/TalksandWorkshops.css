@@ -12,6 +12,7 @@
   margin-top: 20px;
   border: 2px solid pink;
   border-radius: 5px;
+  background-color: rgb(255, 255, 255, 0.3);
 }
 
 h2 {
@@ -79,6 +80,10 @@ p {
 .contact-button:hover {
   background-color: #ff66b2;
   scale: 1.05;
+}
+
+.header-line {
+  margin-bottom: 50px;
 }
 
 
