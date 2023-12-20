@@ -87,7 +87,7 @@ body {
     width: 100%;
     top: 10vh;
     left: 0;
-    background-color: rgb(246, 162, 218);
+    background-color: white;
     padding: 20px 0;
     overflow: hidden;
     max-height: 0;
@@ -121,7 +121,7 @@ body {
     bottom: 0; /* Adjust the distance from the text to place the line below the text */
     width: 100%; /* Stretch the line across the full width */
     height: 3px; /* Set the height of the dividing line */
-    background-color: gray; /* Set the color of the dividing line */
+    background-color: pink; /* Set the color of the dividing line */
   }
 
   .nav-links a:hover::after,
