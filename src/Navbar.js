@@ -31,9 +31,6 @@ const Navbar = () => {
         <NavLink to="/my-work" onClick={() => { setActiveLink('/my-work'); handleLinkClick(); }} activeClassName="active-link">
           My Work
         </NavLink>
-        {/* <NavLink to="/recent-updates" onClick={() => { setActiveLink('/recent-updates'); handleLinkClick(); }} activeClassName="active-link">
-          Updates
-        </NavLink> */}
         <NavLink to="/contact" onClick={() => { setActiveLink('/contact'); handleLinkClick(); }} activeClassName="active-link">
           Contact
         </NavLink>
