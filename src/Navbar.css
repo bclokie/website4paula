@@ -15,14 +15,15 @@ body {
 }
 
 .logo {
-  width: 120px;
-  margin-left: 20px;
-  transition: scale 0.3s ease-in-out;
+  scale: 0.15;
+  margin-left: -400px;
+  margin-right: -500px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .logo:hover {
   cursor: pointer;
-  scale: 1.05;
+  transform: scale(1.05);
 }
 
 .menu-icon {
@@ -102,8 +103,7 @@ body {
   }
 
   .logo {
-    max-width: 30vw;
-    max-height: 12vh;
+    scale: 0.15;
   }
 
   .nav-links a {
