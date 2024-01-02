@@ -120,13 +120,17 @@ body, html {
 
 .my-updates-button:hover {
   background-color: #ff66b2; 
-  scale: 1.05;
+  scale: 1.05
+}
+
+.my-work-footer-line {
+  opacity: 0;
 }
 
 /* Media Query for Portrait Mode */
 @media screen and (orientation: portrait) {
   .my-work-items {
-    margin: 20px auto; /* Added margin around the entire work items container */
+    margin: 50px auto; /* Added margin around the entire work items container */
     position: relative; /* Add position relative to the work items container */
     flex-direction: column;
     display: flex;
@@ -134,11 +138,18 @@ body, html {
   }
 
   .my-work-item {
-    margin-bottom: 20px;
+    margin: 20px auto;
     width: 80vw;
+    display: flex;
+    align-items: center;
   }
 
   .my-work-header-line {
     width: 100px;
+  }
+
+  .my-updates-button {
+    margin-bottom: 20px;
+    margin-top: -20px;
   }
 }

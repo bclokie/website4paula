@@ -30,6 +30,7 @@ const MyWork = () => {
       <Link to="/contact" className="my-updates-button">
         Contact Me!
       </Link>
+      <div className="my-work-footer-line">-----------</div>
     </div>
   );
 };
