@@ -187,6 +187,7 @@
   margin-left: 0px;
 }
 
+/* Mobile View */
 @media screen and (orientation: portrait) {
   .about-content {
     margin-top: 20px;
@@ -200,12 +201,19 @@
     margin-bottom: 1rem;
     animation: riseUp 1s ease-out;
     margin: 0 auto;
-    max-width: 60%;
-  }
+    scale: 0.4;
+    margin: -35vh 0 -30vh 0;
+    }
 
   .about-text {
     margin-top: 20px; /* Adjusted margin */
     margin-bottom: 1.25rem;
+  }
+
+  .about-text p {
+    width: 90vw;
+    font-size: 1.5rem;
+    margin-left: 60vw;
   }
 
   .my-work-button {
