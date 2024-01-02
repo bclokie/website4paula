@@ -80,6 +80,10 @@
   color: lightpink; /* Change the color for visited links */
 }
 
+.blank {
+  opacity: 0;
+}
+
 @media screen and (orientation: portrait) {
   .published-works-container {
     margin: 20px auto;
