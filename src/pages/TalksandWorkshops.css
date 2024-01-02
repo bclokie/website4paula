@@ -27,7 +27,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 50px auto; 
+  margin: 20px auto; 
   margin-bottom: 20px;
 }
 
