@@ -35,6 +35,7 @@
 .tools-models-work-item img {
   border: 1px solid black;
   border-radius: 1px;
+  width: 100%;
 }
 
 .tools-models-work-item h3 {
