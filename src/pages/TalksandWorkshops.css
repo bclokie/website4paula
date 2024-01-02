@@ -27,7 +27,13 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 40px auto; 
+  margin: 50px auto; 
+  margin-bottom: 20px;
+}
+
+.talks-workshops-images img {
+  background-color: white;
+  border: 1px solid black;
 }
 
 .teaching-image {
@@ -35,6 +41,8 @@ p {
   display: flex;
   justify-content: center;
   margin: -400px 0 -400px 0;
+  background-color: white;
+  border: 1px solid black;
 }
 
 .image-row {
