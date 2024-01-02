@@ -84,7 +84,7 @@ const TalksandWorkshops = () => {
           design and implementation.        
         </p>
         {/* Image for Section 5 */}
-        <div className="talks-workshops-images">
+        <div className="talks-workshops-final-image">
           <img src="/MyHealthNB.png" alt="MyHealthNB" />
         </div>
       </div>
