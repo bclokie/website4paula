@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <NavLink to="/" className="logo" onClick={() => { setActiveLink('/'); handleLinkClick(); }}>
-        <img src='./logo.png' alt="Logo" />
+        <img src='./logo.svg' alt="Logo" />
       </NavLink>
       <div className="menu-icon" onClick={toggleMenu}>
         <i className={isOpen ? 'fas fa-times' : 'fas fa-bars'}></i>
