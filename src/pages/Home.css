@@ -62,7 +62,7 @@ body, html {
 }
 
 .home-image {
-  max-width: 28vw;
+  scale: 0.95;
 }
 
 @media screen and (max-width: 768px) {
@@ -73,15 +73,14 @@ body, html {
   .home-container {
     flex-direction: column;
     align-items: center;
-    max-height: 80vh;
     margin-top: 5%;
   }
 
   .home-image {
     order: 1;
-    max-width: 40%;
     animation: riseUp 1s ease-out;
-    margin-top: 5%;
+    margin-top: -26vh;
+    scale: 0.5;
   }
 
   .header h1 {
