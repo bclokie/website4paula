@@ -109,8 +109,8 @@ const ToolsandModels = () => {
         </div>
       </div>
 
-      <Link to="/contact" className="tools-models-updates-button">
-        Contact Me!
+      <Link to="/publications" className="tools-models-updates-button">
+        Publications
       </Link>
       
       {/* Overlay for the clicked image */}
