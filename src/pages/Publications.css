@@ -45,10 +45,11 @@
 .publication a {
   display: block;
   color: lightblue;
-  text-decoration: none;
+  text-decoration: underline;
   font-weight: bold;
   margin-left: 44vw;
   margin-right: 44vw;
+  margin-top: 15px;
 }
 
 @keyframes riseUp {
