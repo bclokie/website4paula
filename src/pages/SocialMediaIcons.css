@@ -1,7 +1,13 @@
+/* SocialMediaIcons.css */
+
 .social-icons {
   display: flex;
   align-items: center;
   gap: 1px;
+}
+
+.social-icons .social-link {
+  text-decoration: none; /* Remove underline */
 }
 
 .social-icons i {
