@@ -6,6 +6,15 @@
   padding: 20px;
 }
 
+.divider {
+  height: px;
+  color: white;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid white;
+  margin: 0 5vw 5vw 5vw;
+}
+
 .work-title {
   font-size: 36px;
   padding: 10px 20px;
