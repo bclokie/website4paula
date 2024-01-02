@@ -20,8 +20,13 @@ const TalksandWorkshops = () => {
           I have had the opportunity to present at many different academic conferences in my field. Below is a short list of key conferences I have presented at.
         </p>
         <div className="talks-workshops-images">
-          {Array.from({ length: 5 }).map((_, index) => (
+          {Array.from({ length: 3 }).map((_, index) => (
             <img key={index} src={`/S1.${index + 1}.png`} alt={`Conference ${index + 1}`} />
+          ))}
+        </div>
+        <div className="talks-workshops-images">
+        {Array.from({ length: 2 }).map((_, index) => (
+            <img key={index} src={`/S1.${index + 4}.png`} alt={`Conference ${index + 4}`} />
           ))}
         </div>
       </div>
