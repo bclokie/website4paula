@@ -31,8 +31,10 @@ p {
 }
 
 .teaching-image {
-  margin: 20px auto;
-  width: 50vw;  
+  scale: 0.2;  
+  display: flex;
+  justify-content: center;
+  margin: -400px 0 -400px 0;
 }
 
 .image-row {
@@ -84,6 +86,24 @@ p {
 
 .header-line {
   margin-bottom: 50px;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .talks-workshops-images img {
+    width: 80vw;
+    object-fit: contain; 
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin: 0 auto;
+  }
+
+  .teaching-image {
+    scale: 0.07;  
+    display: flex;
+    justify-content: center;
+    margin: -450px 0 -450px 0;
+  }
 }
 
 

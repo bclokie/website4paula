@@ -78,9 +78,9 @@ const TalksandWorkshops = () => {
           New Brunswickers, and will also help them inform future improvements to MyHealthNB’s
           design and implementation.        
         </p>
-        {/* Image for Section 4 */}
+        {/* Image for Section 5 */}
         <div className="talks-workshops-images">
-          <img src="/MyHealthNB.png" alt="Teaching" />
+          <img src="/MyHealthNB.png" alt="MyHealthNB" />
         </div>
       </div>
       <div className="button">
