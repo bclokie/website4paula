@@ -87,7 +87,7 @@ body {
   }
   
   .menu-icon.close {
-    transform: rotate(0deg); /* Rotate the icon back to its original state when the menu is closed */
+    transform: rotate(0deg); /* Start and end position for the animation */
   }
 
   .nav-links {
