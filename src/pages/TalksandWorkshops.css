@@ -2,6 +2,10 @@
 
 @import '~@fortawesome/fontawesome-free/css/all.css';
 
+body {
+  width: 100vw;
+}
+
 .talks-workshops-container {
   padding: 20px;
   text-align: center;
@@ -30,6 +34,13 @@ p {
   margin: 20px auto; 
 }
 
+.talks-workshops-images-row2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px auto; 
+}
+
 .teaching-image {
   scale: 0.2;  
   display: flex;
@@ -47,6 +58,17 @@ p {
 }
 
 .talks-workshops-images img {
+  width: 30vw;
+  height: 30vh;
+  object-fit: contain; 
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.talks-workshops-images-row2 img {
   width: 30vw;
   height: 30vh;
   object-fit: contain; 
@@ -101,12 +123,23 @@ p {
 
 /* Mobile View */
 @media (max-width: 768px) {
+  body {
+    width: 100vw;
+  }
+
   .talks-workshops-images img {
     width: 80vw;
     object-fit: contain; 
     margin-right: 10px;
     margin-bottom: 10px;
-    margin: 0 auto;
+  }
+
+  .talks-workshops-images-row2 img {
+    width: 80vw;
+    object-fit: contain; 
+    margin-right: 10px;
+    margin-bottom: 30px;
+    margin-top: -20px;
   }
 
   .teaching-image {
@@ -114,6 +147,10 @@ p {
     display: flex;
     justify-content: center;
     margin: -450px 0 -450px 0;
+  }
+
+  .talks-workshops-final-image {
+    scale: 2;
   }
 }
 

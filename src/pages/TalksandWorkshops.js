@@ -24,7 +24,7 @@ const TalksandWorkshops = () => {
             <img key={index} src={`/S1.${index + 1}.png`} alt={`Conference ${index + 1}`} />
           ))}
         </div>
-        <div className="talks-workshops-images">
+        <div className="talks-workshops-images-row2">
         {Array.from({ length: 2 }).map((_, index) => (
             <img key={index} src={`/S1.${index + 4}.png`} alt={`Conference ${index + 4}`} />
           ))}
