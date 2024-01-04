@@ -90,13 +90,14 @@ body, html {
 
   .header h1 {
     font-size: 2rem; 
-    max-width: 100%;
-    color: white;
+  }
+
+  .header h2 {
+    font-size: 1.75rem;
   }
 
   .header p {
     font-size: 1.5rem; 
-    color: white;
   }
 
   .about-button {
