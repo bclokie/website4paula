@@ -114,7 +114,7 @@ const Contact = () => {
       <LoadScript googleMapsApiKey={apiKey}>
       <GoogleMap
         center={{ lat: 43.65591, lng: -79.38924 }}
-        zoom={16}
+        zoom={15}
         mapContainerStyle={{ width: '100%', height: '100%' }}
         onLoad={handleMapLoad}
         disableDefaultUI={true}

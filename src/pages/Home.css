@@ -37,6 +37,12 @@ body, html {
   color: white;
 }
 
+.header h2 {
+  font-size: 50px;
+  text-align: center;
+  color: white;
+}
+
 .header p {
   font-size: 40px;
   color: white;
