@@ -1,11 +1,5 @@
 /* MyWork.css */
 
-body, html {
-  min-height: 90vh;
-  margin: 0;
-  padding: 0;
-}
-
 .my-work-container {
   display: flex;
   flex-direction: column;
@@ -13,10 +7,8 @@ body, html {
   justify-content: flex-start;
   padding: 20px;
   text-align: center;
-  height: 100vh;
   background-attachment: fixed;
   animation: my-work-riseUp 1s ease-out; /* Apply the translateY animation */
-  margin-bottom: 50px;
 }
 
 /* Add keyframes for the grow animation */
@@ -131,6 +123,7 @@ body, html {
 
 /* Media Query for Portrait Mode */
 @media screen and (orientation: portrait) {
+
   .my-work-items {
     margin: 50px auto; /* Added margin around the entire work items container */
     position: relative; /* Add position relative to the work items container */
