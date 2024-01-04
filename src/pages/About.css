@@ -142,7 +142,7 @@
   max-width: 150px;
   margin-right: 40px;
   transform: translateX(-100%); /* Initial position off-screen to the left */
-  background-color: rgb(255,255,255,0.7);
+  background-color: rgb(255,255,255,.9);
   border-radius: 10%;
 }
 
@@ -189,11 +189,16 @@
 
 /* Mobile View */
 @media screen and (orientation: portrait) {
+  body {
+    max-width: fit-content;
+  }
+
   .about-content {
     margin-top: 20px;
     margin-bottom: 20px;
     flex-direction: column;
     font-size: 25px;
+    width: 100%;
   }
 
   .about-image {
@@ -203,6 +208,7 @@
     margin: 0 auto;
     scale: 0.4;
     margin: -35vh 0 -30vh 0;
+    align-self: center;
     }
 
   .about-text {
@@ -213,7 +219,8 @@
   .about-text p {
     width: 90vw;
     font-size: 1.5rem;
-    margin-left: 60vw;
+    display: flex;
+    align-items: center;
   }
 
   .my-work-button {
