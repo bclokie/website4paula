@@ -103,7 +103,7 @@ const Contact = () => {
           </div>
 
           <input type="text" id="subject" name="subject" placeholder="Subject" required />
-          <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
+          <input type="text" id="message" name="message" rows="4" placeholder="Message" required></input>
 
           <button type="submit">Send Message</button>
         </form>
