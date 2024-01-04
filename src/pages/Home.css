@@ -14,8 +14,6 @@ body, html {
   align-items: center;
   justify-content: space-between; /* Added to create space between the two divs */
   text-align: center;
-  max-height: 100vh;
-  height: 90vh;
   background-attachment: fixed;
   overflow: -moz-hidden-unscrollable;
 }
@@ -72,14 +70,15 @@ body, html {
 }
 
 @media screen and (max-width: 768px) {
-  .body {
-    overflow: hidden;
+  body {
+    background: linear-gradient(to bottom, #8e44ad, #341f97);
   }
 
   .home-container {
     flex-direction: column;
     align-items: center;
     margin-top: 5%;
+    max-height: 120vh;
   }
 
   .home-image {
