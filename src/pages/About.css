@@ -13,10 +13,9 @@
 .page-header,
 .about-content,
 .my-work-button {
-  animation: riseUp 1s ease-out; /* Apply the translateY animation */
+  animation: riseUp 1s ease-out; 
 }
 
-/* Add keyframes for the translateY animation */
 @keyframes riseUp {
   0% {
     transform: translateY(20%);
@@ -70,7 +69,7 @@
 }
 
 .about-image {
-  flex: 1; /* Allow the image to take up available space */
+  flex: 1; 
   margin-right: -5vw;
   margin-top: -15vh;
   margin-left: -5vw;
@@ -78,7 +77,7 @@
 }
 
 .about-text {
-  flex: 2; /* Allow the text to take up available space */
+  flex: 2; 
   max-width: 800px;
 }
 
@@ -89,7 +88,7 @@
 
 
 .my-work-button {
-  margin-top: 40px; /* Adjust this margin as needed outside the media query */
+  margin-top: 40px; 
   display: block;
   width: fit-content;
   padding: 15px 30px;
@@ -212,7 +211,7 @@
     }
 
   .about-text {
-    margin-top: 20px; /* Adjusted margin */
+    margin-top: 20px; 
     margin-bottom: 1.25rem;
   }
 
@@ -225,7 +224,7 @@
   }
 
   .my-work-button {
-    margin-top: 10%; /* Adjusted margin */
+    margin-top: 10%; 
     font-size: 1.5rem;
     margin-right: 50%;
     width: 60vw;
