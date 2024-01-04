@@ -11,6 +11,10 @@
   animation: tools-riseUp 1s ease-out;
 }
 
+.divider {
+  display: none;
+}
+
 .tools-models-work-items {
   display: flex;
   flex-wrap: wrap;
@@ -144,6 +148,18 @@
   .tools-models-section-subtitle {
     width: 100%;
   }
+
+  .divider {
+    display: flex;
+  }
+
+  .tools-models-header-line {
+    margin-bottom: 5vh;
+  }
+
+  .tools-models-title {
+    font-size: 2rem;
+    }
 }
 
 @keyframes tools-riseUp {
