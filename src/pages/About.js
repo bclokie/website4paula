@@ -43,21 +43,21 @@ const About = () => {
               I use mixed methods research approaches and work closely with stakeholders (e.g., patients,
               caregivers, and providers) to ensure innovative solutions meet users’ needs.
             </p>
-            <br />
+            <hr className="divider"/>
             <p>
               I currently work as a Postdoctoral Researcher at Sinai Health, Toronto, to advance my program
               of research on behaviourally-informed innovations. I also work as the Head of R&amp;D at
               VeroSource Solutions, helping them evaluate and enhance their digital health products and
               solutions.
             </p>
-            <br />
+            <hr className="divider"/>
             <p>
               In addition to this work, I am also a member of University of Toronto’s Entrepreneurship
               Accelerator, “InnovED.” InnovED is committed to innovation in education, focusing on
               supporting meaningful improvements in a new or modified practice, technology, or process
               that supports any part of our educational ecosystem.
             </p>
-            <br />
+            <hr className="divider"/>
           </div>
         </div>
         {/* Education Section */}
