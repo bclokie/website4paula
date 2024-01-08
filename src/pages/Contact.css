@@ -63,9 +63,9 @@ body, html {
   width: 230px;
   padding: 10px;
   text-decoration: none;
-  /* background-color: rgba(255, 255, 255, 0.309); */
-  /* border: 1px solid pink;
-  border-radius: 10px; */
+  background-color: rgba(255, 255, 255, 0.1);
+  /* border: 1px solid pink; */
+  border-radius: 10px;
 }
 
 .contact-section:hover .icon-wrapper {
