@@ -74,7 +74,7 @@
   align-items: center;
   border: 4px solid pink;
   border-radius: 25px;
-  background-color: lightgray;
+  background-color: rgb(252, 252, 252);
   animation: my-work-grow 1s ease-out; /* Apply the grow animation */
   overflow: hidden;
   width: 26vw;
