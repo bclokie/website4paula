@@ -31,6 +31,8 @@ const TalksandWorkshops = () => {
         </div>
       </div>
 
+      <hr className="tnw-divider" />
+
       {/* Section 2: Co-Design Workshops */}
       <div className="talks-workshops-section">
         <h2>Co-Design Workshops</h2>
@@ -43,6 +45,8 @@ const TalksandWorkshops = () => {
           ))}
         </div>
       </div>
+
+      <hr className="tnw-divider" />
 
       {/* Section 3: Company Presentations */}
       <div className="talks-workshops-section">
@@ -58,6 +62,8 @@ const TalksandWorkshops = () => {
         </div>
       </div>
 
+      <hr className="tnw-divider" />
+
       {/* Section 4: Teaching */}
       <div className="talks-workshops-section">
         <h2>Teaching</h2>
@@ -69,6 +75,8 @@ const TalksandWorkshops = () => {
           <img src="/S4.1.png" alt="Teaching" />
         </div>
       </div>
+
+      <hr className="tnw-divider" />
 
       {/* Section 5: Coaching */}
       <div className="talks-workshops-section">

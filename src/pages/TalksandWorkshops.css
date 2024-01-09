@@ -14,8 +14,8 @@ body {
 .talks-workshops-section {
   margin-bottom: 20px;
   margin-top: 20px;
-  border: 2px solid pink;
-  border-radius: 5px;
+  /* border: 2px solid pink;
+  border-radius: 5px; */
   /* background-color: rgb(255, 255, 255, 0.3); */
 }
 
@@ -119,6 +119,16 @@ p {
 
 .header-line {
   margin-bottom: 50px;
+}
+
+.tnw-divider {
+  height: 1px;
+  color: pink;
+  background-color: pink;
+  border-radius: 20px;
+  border: 1px solid pink;
+  margin: 50px 0 50px 0; /* Adjust margin as needed for your design */
+  opacity: 1;
 }
 
 /* Mobile View */
