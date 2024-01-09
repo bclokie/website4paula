@@ -109,7 +109,7 @@ const Contact = () => {
         </form>
       </div>
     </div>
-    <h2 className= "FindMe">Where to Find Me 📍</h2>
+    <h2 className= "find-me">Where to Find Me 📍</h2>
       <div className="google-maps-container">
       <LoadScript googleMapsApiKey={apiKey}>
       <GoogleMap
