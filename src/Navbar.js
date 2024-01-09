@@ -5,6 +5,7 @@ import SocialMediaIcons from './pages/SocialMediaIcons';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  //eslint-disable-next-line
   const [activeLink, setActiveLink] = useState('/');
 
   const toggleMenu = () => {
