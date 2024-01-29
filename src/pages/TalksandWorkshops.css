@@ -6,9 +6,19 @@ body {
   width: 100vw;
 }
 
+@keyframes moveUp {
+  from {
+    transform: translateY(8%); /* Adjust the initial translateY value */
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
 .talks-workshops-container {
   padding: 20px;
   text-align: center;
+  animation: moveUp 1s ease-in-out; 
 }
 
 .talks-workshops-section {
