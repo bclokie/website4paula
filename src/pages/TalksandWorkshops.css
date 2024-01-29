@@ -20,7 +20,7 @@ body {
 .talks-workshops-container {
   padding: 20px;
   text-align: center;
-  animation: moveUp 1s ease-in-out; 
+  animation: moveUp 1s ease-out; 
 }
 
 .talks-workshops-section {
