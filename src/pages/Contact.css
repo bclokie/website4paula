@@ -257,4 +257,8 @@ body, html {
     color: black;
     margin: 10px auto;
   }
+
+  .find-me {
+    margin-top: 0px;
+  }
 }
