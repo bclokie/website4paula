@@ -10,6 +10,43 @@ const Contact = () => {
   const [isMapLoaded, setIsMapLoaded] = useState(false);
   const [showMarker, setShowMarker] = useState(false);
   const [showInfoWindow, setShowInfoWindow] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: '',
+  });
+
+  const handleInputChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('https://formspree.io/mkndoaoj', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      // Handle the response, show success message or handle errors
+      console.log(response);
+
+      // If the submission was successful, you can redirect or show a success message
+      if (response.ok) {
+        alert('Form submitted successfully!');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+    }
+  };
 
   useEffect(() => {
     const icons = document.querySelectorAll('.icon-wrapper');
@@ -96,17 +133,47 @@ const Contact = () => {
 
       <div className="contact-form">
         <h2>Send Me a Message 🙂</h2>
-        <form>
-          <div className="name-email-container">
-            <input type="text" id="name" name="name" placeholder="Your Name" required />
-            <input type="email" id="email" name="email" placeholder="Your Email" required />
-          </div>
-
-          <input type="text" id="subject" name="subject" placeholder="Subject" required />
-          <input type="text" id="message" name="message" rows="4" placeholder="Message" required></input>
-
-          <button type="submit">Send Message</button>
-        </form>
+        <form onSubmit={handleFormSubmit}>
+            <div className="name-email-container">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                required
+                value={formData.name}
+                onChange={handleInputChange}
+              />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                required
+                value={formData.email}
+                onChange={handleInputChange}
+              />
+            </div>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Subject"
+              required
+              value={formData.subject}
+              onChange={handleInputChange}
+            />
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Message"
+              required
+              value={formData.message}
+              onChange={handleInputChange}
+            ></textarea>
+            <button type="submit">Send Message</button>
+          </form>
       </div>
     </div>
     <h2 className= "find-me">Where to Find Me 📍</h2>
